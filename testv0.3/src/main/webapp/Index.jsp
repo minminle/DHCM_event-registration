@@ -57,8 +57,7 @@
             </div>
             
             <p class="tm-mb-80 pr-5 text-white">
-                觀迎登入健康事業管理系實習請假平台
-                <br>請假過程如有疑問請聯繫健管系辦公室！
+               
             </p>
         </div>
     </header>
