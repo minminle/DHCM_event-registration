@@ -45,6 +45,8 @@
             <div class="tm-mb-65">
                 <a rel="nofollow" href="https://www.ntunhs.edu.tw" class="tm-social-link">
                     <i class="fab fa-facebook tm-social-icon"></i>
+                    <i class="fab fi fi-rs-school"></i>
+                    <i class="fab fa fa-address-book"></i>
                 </a>
                 <a href="https://twitter.com" class="tm-social-link">
                     <i class="fab fa-twitter tm-social-icon"></i>
