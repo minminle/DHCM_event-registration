@@ -1,11 +1,11 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="BIG5"%>
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>°·±dЁЖ·~єЮІzЁt№кІЯЅР°ІҐ­Ґx</title>
+	<title>еЃҐз®Ўзі»еЇ¦зї’и«‹еЃ‡е№іеЏ°-й¦–й Ѓ</title>
 	<link rel="stylesheet" href="fontawesome/css/all.min.css"> 
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -20,25 +20,24 @@
             
             <div class="tm-site-header">
                 <div class="mb-3 mx-auto tm-site-logo"><i class="fas fa-times fa-2x"></i></div>            
-                <h4 class="text-center">°кҐЯҐxҐ_Е@Іz°·±d¤jѕЗ</h4>
+                <h4 class="text-center">ењ‹з«‹еЏ°еЊ—и­·зђ†еЃҐеє·е¤§е­ё</h4>
                 <br>
-                <h3 class="text-center">°·єЮЁt№кІЯЅР°ІҐ­Ґx</h3>
-                
+                <h3 class="text-center">еЃҐз®Ўзі»еЇ¦зї’и«‹еЃ‡е№іеЏ°</h3>
             </div>
             
             <nav class="tm-nav" id="tm-nav">            
                 <ul>
                     <li class="tm-nav-item active"><a href="Index.jsp" class="tm-nav-link">
-                        <i class="fas fa-home"></i>­є­¶</a></li>
+                        <i class="fas fa-home"></i>й¦–й Ѓ</a></li>          <!-- еЋџз¶Ій ЃжЇHome -->
                         
-                    <li class="tm-nav-item"><a href="Post.jsp" class="tm-nav-link">
-                        <i class="fas fa-pen"></i>ЅР°ІҐУЅР</a></li>
+                    <li class="tm-nav-item"><a href="Application.jsp" class="tm-nav-link">
+                        <i class="fas fa-pen"></i>и«‹еЃ‡з”іи«‹</a></li>       <!-- еЋџз¶Ій ЃжЇSingle Post -->
                     
-                    <li class="tm-nav-item"><a href="Ccontact.jsp" class="tm-nav-link">
-                        <i class="far fa-comments"></i>°ІіжЄ¬Єp</a></li>
+                    <li class="tm-nav-item"><a href="Details.jsp" class="tm-nav-link">
+                        <i class="far fa-comments"></i>еЃ‡е–®з‹ЂжіЃ</a></li>  <!-- еЋџз¶Ій ЃжЇAbout Xtra -->
                             
-                    <li class="tm-nav-item"><a href="About.jsp" class="tm-nav-link">
-                        <i class="fas fa-users"></i>Г±®Ц§@·~</a></li>
+                    <li class="tm-nav-item"><a href="Check.jsp" class="tm-nav-link">
+                        <i class="fas fa-users"></i>з°Ѕж ёдЅњжҐ­</a></li>     <!-- еЋџз¶Ій ЃжЇContact Us -->
                 </ul>
             </nav>
             
@@ -65,9 +64,14 @@
     
     <div class="container-fluid">
         <main class="tm-main">
-            <!-- Ґk¤WЁ¤¤є®e(¬Y¬Y¬YЎB®Й¶ЎЎB¤йґБЎBµn¤J«ц¶s)ҐiҐ[¦bіoЎA­м·jґMДжЄє¦мёm-->
+            <!-- еЏідёЉи§’е…§е®№(жџђжџђжџђгЂЃж™‚й–“гЂЃж—ҐжњџгЂЃз™»е…ҐжЊ‰й€•)еЏЇеЉ ењЁйЂ™пјЊеЋџжђње°‹ж¬„зљ„дЅЌзЅ®-->
             
-                        
+            <!--дёЉйќўзљ„дёЂжўќз·љ-->
+            <div class="row tm-row tm-mb-45">
+                <div class="col-12">
+                    <hr class="tm-hr-primary tm-mb-55"></div>
+            </div>
+            <!--     
             <div class="row tm-row">
                 <article class="col-12 col-md-6 tm-post">
                     <hr class="tm-hr-primary">
@@ -227,8 +231,9 @@
                         <span>by Admin Sam</span>
                     </div>
                 </article>
-            </div>
+            </div> -->
             
+            <!-- 
             <div class="row tm-row tm-mt-100 tm-mb-75">
                 <div class="tm-prev-next-wrapper">
                     <a href="#" class="mb-2 tm-btn tm-btn-primary tm-prev-next disabled tm-mr-20">Prev</a>
@@ -257,16 +262,16 @@
                         </ul>
                     </nav>
                 </div>                
-            </div> 
+            </div>   -->
                        
             <footer class="row tm-row">
                 <hr class="col-12">
                 <div class="col-md-6 col-12 tm-color-gray">
-                    Design: <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-external-link">TemplateMo</a>
+                    Design byпјљжќЋе‰зЏ‰гЂЃе­«еђ€дЅігЂЃжҐЉе®њи“Ѓ
                 </div>
                 
                 <div class="col-md-6 col-12 tm-color-gray tm-copyright">
-                    Copyright 2020 Xtra Blog Company Co. Ltd.
+                    2022
                 </div>
             </footer>
             
