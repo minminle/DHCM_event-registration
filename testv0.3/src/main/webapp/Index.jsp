@@ -12,6 +12,7 @@
     <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
 </head>
 <body>
+	<%request.setCharacterEncoding("UTF-8"); %>
 	<header class="tm-header" id="tm-header">
         <div class="tm-header-wrapper">
             <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
@@ -57,8 +58,8 @@
             </div>
             
             <p class="tm-mb-80 pr-5 text-white">
-                Æ[ªïµn¤J°·±d¨Æ·~ºÞ²z¨t¹ê²ß½Ð°²¥­¥x
-                <br>½Ð°²¹Lµ{¦p¦³ºÃ°Ý½ÐÁpÃ´°·ºÞ¨t¿ì¤½«Ç¡I
+                ï¿½[ï¿½ï¿½nï¿½Jï¿½ï¿½ï¿½dï¿½Æ·~ï¿½Þ²zï¿½tï¿½ï¿½ß½Ð°ï¿½ï¿½ï¿½ï¿½x
+                <br>ï¿½Ð°ï¿½ï¿½Lï¿½{ï¿½pï¿½ï¿½ï¿½Ã°Ý½ï¿½ï¿½pÃ´ï¿½ï¿½ï¿½Þ¨tï¿½ì¤½ï¿½Ç¡I
             </p>
         </div>
     </header>
