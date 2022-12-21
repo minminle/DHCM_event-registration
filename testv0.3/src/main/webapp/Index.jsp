@@ -6,8 +6,8 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>健康事業管理系實習請假平台</title>
-	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
-	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> <!-- https://fonts.google.com/ -->
+	<link rel="stylesheet" href="fontawesome/css/all.min.css"> 
+	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
 </head>
@@ -26,19 +26,19 @@
             </div>
             <nav class="tm-nav" id="tm-nav">            
                 <ul>
-                    <li class="tm-nav-item active"><a href="index.html" class="tm-nav-link">
+                    <li class="tm-nav-item active"><a href="Index.jsp" class="tm-nav-link">
                         <i class="fas fa-home"></i>
                         Home
                     </a></li>
-                    <li class="tm-nav-item"><a href="post.html" class="tm-nav-link">
+                    <li class="tm-nav-item"><a href="Post.jsp" class="tm-nav-link">
                         <i class="fas fa-pen"></i>
                         Single Post
                     </a></li>
-                    <li class="tm-nav-item"><a href="about.html" class="tm-nav-link">
+                    <li class="tm-nav-item"><a href="About.jsp" class="tm-nav-link">
                         <i class="fas fa-users"></i>
                         About Xtra
                     </a></li>
-                    <li class="tm-nav-item"><a href="contact.html" class="tm-nav-link">
+                    <li class="tm-nav-item"><a href="Ccontact.jsp" class="tm-nav-link">
                         <i class="far fa-comments"></i>
                         Contact Us
                     </a></li>
