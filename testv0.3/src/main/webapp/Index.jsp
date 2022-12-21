@@ -5,7 +5,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>健管系實習請假平台-首頁</title>
+	<title>健管系實習請假平台-首頁</title> <!-- 改成登入介面 -->
 	<link rel="stylesheet" href="fontawesome/css/all.min.css"> 
 	<link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet"> 
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -73,6 +73,7 @@
                 <div class="col-12">
                     <hr class="tm-hr-primary tm-mb-55"></div>
             </div>
+            
             <!--     
             <div class="row tm-row">
                 <article class="col-12 col-md-6 tm-post">
