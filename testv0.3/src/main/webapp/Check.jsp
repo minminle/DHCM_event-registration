@@ -12,6 +12,7 @@
     <link href="css/templatemo-xtra-blog.css" rel="stylesheet">
 </head>
 <body>
+	<%request.setCharacterEncoding("UTF-8"); %>
 	<header class="tm-header" id="tm-header">
         <div class="tm-header-wrapper">
             <button class="navbar-toggler" type="button" aria-label="Toggle navigation">
