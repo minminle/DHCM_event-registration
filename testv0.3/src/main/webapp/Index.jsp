@@ -42,7 +42,7 @@
             </nav>
             
             <div class="tm-mb-65">
-                <a rel="nofollow" href="https://fb.com/templatemo" class="tm-social-link">
+                <a rel="nofollow" href="https://www.ntunhs.edu.tw" class="tm-social-link">
                     <i class="fab fa-facebook tm-social-icon"></i>
                 </a>
                 <a href="https://twitter.com" class="tm-social-link">
@@ -57,7 +57,8 @@
             </div>
             
             <p class="tm-mb-80 pr-5 text-white">
-                Xtra Blog is a multi-purpose HTML template from TemplateMo website. Left side is a sticky menu bar. Right side content will scroll up and down.
+                觀迎登入健康事業管理系實習請假平台
+                <br>請假過程如有疑問請聯繫健管系辦公室！
             </p>
         </div>
     </header>
