@@ -27,6 +27,10 @@ hr {
 .form-control:-ms-input-placeholder { color: #999; }  
 .form-control::placeholder { color: #999; }
 
+.wrap{
+    margin:0 auto;
+}
+
 .tm-header {
     background-color: #0CC;
     color: white;
