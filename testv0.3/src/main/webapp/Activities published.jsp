@@ -31,17 +31,19 @@
                 <ul>
                     <li class="tm-nav-item active"><a href="Index.jsp" class="tm-nav-link">
                         <!--  <i class="fas fa-home"></i> -->   <!-- 原網頁是Home -->
-                        <img src="img/H.png" alt="Home" width="26" height="26">　首頁</a></li>          
+                        <img src="img/Home_1.png" alt="Home" width="26" height="26">　首頁</a></li>          
                         
                     <li class="tm-nav-item"><a href="Application.jsp" class="tm-nav-link">
                         <!--  <i class="fas fa-pen"></i>　 -->   <!-- 原網頁是Single Post -->
-                        <img src="img/Activities published.png" alt="Home" width="26" height="26">活動刊登</a></li>       
-                    
+                        <img src="img/Published.png" alt="Home" width="26" height="26">　活動刊登</a></li> 
+                              
+                    <!--
                     <li class="tm-nav-item"><a href="Details.jsp" class="tm-nav-link">
                         <i class="far fa-comments"></i>假單狀況</a></li>  <!-- 原網頁是About Xtra -->
-                            
+                    <!--     
                     <li class="tm-nav-item"><a href="Check.jsp" class="tm-nav-link">
                         <i class="fas fa-users"></i>簽核作業</a></li>     <!-- 原網頁是Contact Us -->
+                	
                 </ul>
             </nav>
             
