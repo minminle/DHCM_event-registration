@@ -29,16 +29,20 @@
             <nav class="tm-nav" id="tm-nav">            
                 <ul>
                     <li class="tm-nav-item active"><a href="Index.jsp" class="tm-nav-link">
-                        <i class="fas fa-home"></i>首頁</a></li>          <!-- 原網頁是Home -->
+                        <!--  <i class="fas fa-home"></i> -->   <!-- 原網頁是Home -->
+                        <img src="img/Home.png" alt="Home" width="26" height="26">　首頁</a></li>          
                         
-                    <li class="tm-nav-item"><a href="Application.jsp" class="tm-nav-link">
-                        <i class="fas fa-pen"></i>請假申請</a></li>       <!-- 原網頁是Single Post -->
-                    
+                    <li class="tm-nav-item"><a href="Activities published.jsp" class="tm-nav-link">
+                        <!--  <i class="fas fa-pen"></i>　 -->   <!-- 原網頁是Single Post -->
+                        <img src="img/Published_1.png" alt="Home" width="26" height="26">　活動刊登</a></li> 
+                              
+                    <!--
                     <li class="tm-nav-item"><a href="Details.jsp" class="tm-nav-link">
                         <i class="far fa-comments"></i>假單狀況</a></li>  <!-- 原網頁是About Xtra -->
-                            
+                    <!--     
                     <li class="tm-nav-item"><a href="Check.jsp" class="tm-nav-link">
                         <i class="fas fa-users"></i>簽核作業</a></li>     <!-- 原網頁是Contact Us -->
+                	
                 </ul>
             </nav>
             
