@@ -21,9 +21,9 @@
             
             <div class="tm-site-header">
                 <div class="mb-3 mx-auto tm-site-logo"><i class="fas fa-times fa-2x"></i></div>            
-                <h4 class="text-center">國立台北護理健康大學</h4>
-                <br>
-                <h3 class="text-center">健管系實習請假平台</h3>
+                <h2 class="text-center">活動報名平台</h2>
+                <!--  <br>
+                <h3 class="text-center">健管系實習請假平台</h3> -->
             </div>
             
             <nav class="tm-nav" id="tm-nav">            
