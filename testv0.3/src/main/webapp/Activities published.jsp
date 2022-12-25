@@ -29,13 +29,13 @@
             
             <nav class="tm-nav" id="tm-nav">            
                 <ul>
-                    <li class="tm-nav-item active"><a href="Index.jsp" class="tm-nav-link">
+                    <li class="tm-nav-item"><a href="Index.jsp" class="tm-nav-link">
                         <!--  <i class="fas fa-home"></i> -->   <!-- 原網頁是Home -->
-                        <img src="img/Home_1.png" alt="Home" width="26" height="26">　首頁</a></li>          
+                        <img src="img/Home.png" alt="Home" width="26" height="26">　首頁</a></li>          
                         
-                    <li class="tm-nav-item"><a href="Application.jsp" class="tm-nav-link">
+                    <li class="tm-nav-item active"><a href="Activities published.jsp" class="tm-nav-link">
                         <!--  <i class="fas fa-pen"></i>　 -->   <!-- 原網頁是Single Post -->
-                        <img src="img/Published.png" alt="Home" width="26" height="26">　活動刊登</a></li> 
+                        <img src="img/Published_1.png" alt="Home" width="26" height="26">　活動刊登</a></li> 
                               
                     <!--
                     <li class="tm-nav-item"><a href="Details.jsp" class="tm-nav-link">
@@ -66,41 +66,47 @@
             </p>
         </div>
     </header>
+    
     <div class="container-fluid">
         <main class="tm-main">
             <!-- 右上角內容(某某某、時間、日期、登入按鈕)可加在這，原搜尋欄的位置-->
-                         
             <div class="row tm-row tm-mb-45">
                 <div class="col-12">
-                    <hr class="tm-hr-primary tm-mb-55">
-                    <!-- 原大圖位址 <img src="img/about-01.jpg" alt="Image" class="img-fluid">-->
-                </div>	
+                    <hr class="tm-hr-primary tm-mb-55"></div>
             </div>
             
-            <div class="row tm-row tm-mb-40">
-                <!--  
-                <div class="col-12">                    
-                    <div class="mb-4">
-                    
-                        <h2 class="pt-2 tm-mb-40 tm-color-primary tm-post-title">About this xtra blog</h2>
-                        
-                        <p>
-                            You can immediately download 
-                                <a rel="nofollow" href="https://templatemo.com/tm-553-xtra-blog" target="_blank">Xtra Blog Template</a> 
-                                from TemplateMo website for 100% free of charge. Etiam vehicula, tortor ac eleifend tincidunt, diam neque pellentesque ipsum, 
-                                a geugiat eros mauris eget lorem. Quisque in
-                            bibendum elit, in egestas turpis. Vestibulum ornare sollicitudin congue. Aliquam lorem mi, maximus at iaculis ut, viverra vel
-                            mauris. Duis congue luctus metus, sodales tincidunt lectus fringilla ut. Nunc tempus at magna sed vestibulum.
-                        </p>
-                        
-                        <p>
-                            Proin et arcu ligula. Praesent quis erat eu est solliditudin tristique ut in arcu. Donec bibendum ex id ligula semper dictum.
-                            Proin malesuada luctus auctor. Suspendisse ullamcorper, mi vel molestie ornare, arcu magna euismod ipsum, in
-                            malesuada nulla magna ut enim. Morbi lacinia magna sed sapien auctor, vitae luctus nunc cursus.
-                        </p>                            
-                    </div>                    
-                </div> -->
-            </div>
+        <center>
+        <h1> 登入</h1>
+        <br>
+		<form method="post">
+			
+			<div class="container">
+				
+				<label for="creatoracc"><b>帳號</b></label>
+				
+			    <input type="text" placeholder="請輸入Gmail..." name="eMail" required>
+				<% 	//帳號輸入錯誤時，會出現您輸入的錯誤帳號
+					if(request.getParameter("eMail")!= null){ %>
+					value = '<%=request.getParameter("eMail") %>'
+				<%}%>
+				<br><br>
+			    <label for="creatorpwd"><b>密碼</b></label>
+			    
+			    <input type="password" placeholder="請輸入密碼..." name="creatorPwd" required>
+				<% 	//密碼輸入錯誤時，會出現您輸入的錯誤密碼
+					if(request.getParameter("creatorPwd")!= null){ %>
+					value = '<%=request.getParameter("creatorPwd") %>'
+				<%}%>
+				<br>
+				<br>
+			    <button type="submit" name="loginButton">送出</button>
+			</div>
+				<br>
+			<div class="container" style="background-color:#FFF">
+				<a href="Signup.html" class="signbtn">註冊</a>
+			</div>
+			</center>
+		</form>
             
             <!--
             <div class="row tm-row tm-mb-120">
