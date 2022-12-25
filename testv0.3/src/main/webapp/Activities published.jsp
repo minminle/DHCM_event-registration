@@ -21,15 +21,17 @@
             
             <div class="tm-site-header">
                 <div class="mb-3 mx-auto tm-site-logo"><i class="fas fa-times fa-2x"></i></div>            
-                <h4 class="text-center">國立台北護理健康大學</h4>
+                <h2 class="text-center">活動報名平台</h2>
+                <!--  
                 <br>
-                <h3 class="text-center">健管系實習請假平台</h3>
+                <h3 class="text-center">健管系實習請假平台</h3> -->
             </div>
             
             <nav class="tm-nav" id="tm-nav">            
                 <ul>
                     <li class="tm-nav-item active"><a href="Index.jsp" class="tm-nav-link">
-                        <i class="fas fa-home"></i>首頁</a></li>          <!-- 原網頁是Home -->
+                        <!--  <i class="fas fa-home"></i>-->
+                        <img src="img/H.png" alt="Home" width="26" height="26">　首頁</a></li>          <!-- 原網頁是Home -->
                         
                     <li class="tm-nav-item"><a href="Application.jsp" class="tm-nav-link">
                         <i class="fas fa-pen"></i>請假申請</a></li>       <!-- 原網頁是Single Post -->
@@ -73,6 +75,7 @@
             </div>
             
             <div class="row tm-row tm-mb-40">
+                <!--  
                 <div class="col-12">                    
                     <div class="mb-4">
                     
@@ -93,9 +96,10 @@
                             malesuada nulla magna ut enim. Morbi lacinia magna sed sapien auctor, vitae luctus nunc cursus.
                         </p>                            
                     </div>                    
-                </div>
+                </div> -->
             </div>
             
+            <!--
             <div class="row tm-row tm-mb-120">
                 <div class="col-lg-4 tm-about-col">
                     <div class="tm-bg-gray tm-about-pad">
@@ -140,7 +144,9 @@
                         </p>
                     </div>
                 </div>
-            </div>            
+            </div>
+            -->
+            <!--            
             <div class="row tm-row tm-mb-60">
                 <div class="col-12">
                     <hr class="tm-hr-primary  tm-mb-55">
@@ -215,14 +221,16 @@
                     </div>
                 </div>
             </div>
+            -->
                     
             <footer class="row tm-row">
+                <hr class="col-12">
                 <div class="col-md-6 col-12 tm-color-gray">
-                    Design: <a rel="nofollow" target="_parent" href="https://templatemo.com" class="tm-external-link">TemplateMo</a>
+                    Design by：李嘉珉、孫合佳、楊宜蓁
                 </div>
                 
                 <div class="col-md-6 col-12 tm-color-gray tm-copyright">
-                    Copyright 2020 Xtra Blog Company Co. Ltd.
+                    2022
                 </div>
             </footer>
         </main>
