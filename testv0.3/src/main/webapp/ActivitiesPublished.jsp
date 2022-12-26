@@ -56,7 +56,7 @@ if(request.getParameter("eMail") !=null &&
                 <ul>
                     <li class="tm-nav-item"><a href="Index.jsp" class="tm-nav-link">
                         <!--  <i class="fas fa-home"></i> -->   <!-- 原網頁是Home -->
-                        <img src="img/Home.png" alt="Home" width="26" height="26">　首頁</a></li>          
+                        　首頁<img src="img/Home.png" alt="Home" width="26" height="26"></a></li>          
                         
                     <li class="tm-nav-item active"><a href="Activities published.jsp" class="tm-nav-link">
                         <!--  <i class="fas fa-pen"></i>　 -->   <!-- 原網頁是Single Post -->
@@ -100,7 +100,7 @@ if(request.getParameter("eMail") !=null &&
                     <hr class="tm-hr-primary tm-mb-55"></div>
             </div>
             
-        
+       <div class="warp">
         <h1> 登入</h1>
         <br>
 		<form method="post">
@@ -130,133 +130,9 @@ if(request.getParameter("eMail") !=null &&
 			<div class="container" style="background-color:#FFF">
 				<a href="Signup.html" class="signbtn">註冊</a>
 			</div>
-			
+		
 		</form>
-<!--=====================================================================================================================-->            
-            <!--
-            <div class="row tm-row tm-mb-120">
-                <div class="col-lg-4 tm-about-col">
-                    <div class="tm-bg-gray tm-about-pad">
-                        <div class="text-center tm-mt-40 tm-mb-60">
-                            <i class="fas fa-bezier-curve fa-4x tm-color-primary"></i>                            
-                        </div> 
-                                               
-                        <h2 class="mb-3 tm-color-primary tm-post-title">Background</h2>
-                        
-                        <p class="mb-0 tm-line-height-short">
-                            Phasellus pulvinar nisl ornare leo porttitor, et vestibulum lorem semper. 
-                            Duis risus ex, molestie sit amet magna in,
-                            pharetra pellentesque est. Curabitur elit metus.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4 tm-about-col">
-                    <div class="tm-bg-gray tm-about-pad">
-                        <div class="text-center tm-mt-40 tm-mb-60">
-                            <i class="fas fa-users-cog fa-4x tm-color-primary"></i>                            
-                        </div> 
-                                               
-                        <h2 class="mb-3 tm-color-primary tm-post-title">Teamwork</h2>
-                        
-                        <p class="mb-0 tm-line-height-short">
-                            Suspendisse ullamcorper, mi vel molestie ornare, arcu magna euismod ipsum, in malesuada nulla magna ut enim. 
-                            Morbi lacinia magna sed auctor, vitae nunc cursus.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 tm-about-col">
-                    <div class="tm-bg-gray tm-about-pad">
-                        <div class="text-center tm-mt-40 tm-mb-60">
-                            <i class="fab fa-creative-commons-sampling fa-4x tm-color-primary"></i>                            
-                        </div> 
-                                               
-                        <h2 class="mb-3 tm-color-primary tm-post-title">Our Core Value</h2>
-                        
-                        <p class="mb-0 tm-line-height-short">
-                            Nunc mi ante, suscipit vel dapibus et, volutpat sit amet ante. In tempor nec sem vitae varius. Aliquam tincidunt orci sem, et imperdiet massa consectetur nec.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            -->
-            <!--            
-            <div class="row tm-row tm-mb-60">
-                <div class="col-12">
-                    <hr class="tm-hr-primary  tm-mb-55">
-                </div> 
-                               
-                <div class="col-lg-6 tm-mb-60 tm-person-col">
-                    <div class="media tm-person">
-                        <img src="img/about-02.jpg" alt="Image" class="img-fluid mr-4">
-                        
-                        <div class="media-body">
-                            <h2 class="tm-color-primary tm-post-title mb-2">John Henry</h2>
-                            
-                            <h3 class="tm-h3 mb-3">CEO/Founder</h3>
-                            
-                            <p class="mb-0 tm-line-height-short">
-                                Aliquam non vulputate lectus, vel ultricies diam. Suspendisse at ipsum
-                                hendrerit, vestibulum mi id, mattis tortor.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-6 tm-mb-60 tm-person-col">
-                    <div class="media tm-person">
-                        <img src="img/about-03.jpg" alt="Image" class="img-fluid mr-4">
-                        
-                        <div class="media-body">
-                            <h2 class="tm-color-primary tm-post-title mb-2">Timy Cake</h2>
-                            
-                            <h3 class="tm-h3 mb-3">Project Director</h3>
-                            
-                            <p class="mb-0 tm-line-height-short">
-                                Quisque in bibendum elit, in egestas turpis. Vestibulum ornare sollicitudin congue. 
-                                Aliquam lorem mi, maximus at iaculis ut.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-6 tm-mb-60 tm-person-col">
-                    <div class="media tm-person">
-                        <img src="img/about-04.jpg" alt="Image" class="img-fluid mr-4">
-                        
-                        <div class="media-body">
-                            <h2 class="tm-color-primary tm-post-title mb-2">Jay Zoona</h2>
-                            
-                            <h3 class="tm-h3 mb-3">Supervisor</h3>
-                            
-                            <p class="mb-0 tm-line-height-short">
-                                Maecenas eu mi eu dui cursus consequat non eu metus. Morbi ac
-                                turpis eleifend, commodo purus eget, commodo mauris.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-6 tm-mb-60 tm-person-col">
-                    <div class="media tm-person">
-                        <img src="img/about-05.jpg" alt="Image" class="img-fluid mr-4">
-                        
-                        <div class="media-body">
-                            <h2 class="tm-color-primary tm-post-title mb-2">Catherine Soft</h2>
-                            
-                            <h3 class="tm-h3 mb-3">Team Leader</h3>
-                            
-                            <p class="mb-0 tm-line-height-short">
-                                Integer eu sapien hendrerit,
-                                imperdiet arcu sit amet, sollicitudin ipsum.
-                                Phasellus consequat suscipit ligula eget bibendum.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            -->
-<!--=====================================================================================================================-->                    
+       </div>           
             <footer class="row tm-row">
                 <hr class="col-12">
                 <div class="col-md-6 col-12 tm-color-gray">
