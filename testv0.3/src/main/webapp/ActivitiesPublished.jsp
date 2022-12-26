@@ -1,7 +1,32 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html lang="en">
+<%@page contentType="text/html"%>
+<%@page pageEncoding="UTF-8"%>
+<%@page import="java.sql.*"%>
+<jsp:useBean id='objDBConfig' scope='session' class='hitstd.group.tool.database.DBConfig' />
+<%
+session.setAttribute("access","n"); //access="n"
+if(request.getParameter("eMail") !=null &&
+	request.getParameter("creatorPwd") !=null){
+	Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
+	//Connection con=DriverManager.getConnection("jdbc:ucanaccess://C:\\Users\\s0979\\OneDrive\\文件\\GitHub\\DHCM_take-a-leave\\testv0.3\\src\\main\\webapp\\dhcm.accdb;");
+	Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
+	Statement smt= con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
+	
+	String getpaperdata = "SELECT * FROM creator WHERE eMail='"+
+			request.getParameter("eMail")+"' AND creatorPwd='" +
+			request.getParameter("creatorPwd")+"'";
+	ResultSet paperrs = smt.executeQuery(getpaperdata);
+	
+	if(paperrs.next()){
+		session.setAttribute("access","y"); //access="y"  
+		session.setAttribute("accessid",request.getParameter("eMail"));
+		session.setMaxInactiveInterval(5);
+		response.sendRedirect("https://www.youtube.com/");
+	}else
+		out.println("帳號密碼不符！請重新登入");
+	}
+%>
+
+<html>
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -66,7 +91,7 @@
             </p>
         </div>
     </header>
-    
+<!--============================================================================================================================================================-->    
     <div class="container-fluid">
         <main class="tm-main">
             <!-- 右上角內容(某某某、時間、日期、登入按鈕)可加在這，原搜尋欄的位置-->
@@ -75,14 +100,14 @@
                     <hr class="tm-hr-primary tm-mb-55"></div>
             </div>
             
-        <center>
+        
         <h1> 登入</h1>
         <br>
 		<form method="post">
 			
 			<div class="container">
 				
-				<label for="creatoracc"><b>帳號</b></label>
+				<label for="eMail"><b>帳號</b></label>
 				
 			    <input type="text" placeholder="請輸入Gmail..." name="eMail" required>
 				<% 	//帳號輸入錯誤時，會出現您輸入的錯誤帳號
@@ -99,15 +124,15 @@
 				<%}%>
 				<br>
 				<br>
-			    <button type="submit" name="loginButton">送出</button>
+			    <button type="submit" name="loginBtn">送出</button>
 			</div>
 				<br>
 			<div class="container" style="background-color:#FFF">
 				<a href="Signup.html" class="signbtn">註冊</a>
 			</div>
-			</center>
+			
 		</form>
-            
+<!--=====================================================================================================================-->            
             <!--
             <div class="row tm-row tm-mb-120">
                 <div class="col-lg-4 tm-about-col">
@@ -231,7 +256,7 @@
                 </div>
             </div>
             -->
-                    
+<!--=====================================================================================================================-->                    
             <footer class="row tm-row">
                 <hr class="col-12">
                 <div class="col-md-6 col-12 tm-color-gray">
