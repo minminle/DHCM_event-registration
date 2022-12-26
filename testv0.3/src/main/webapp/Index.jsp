@@ -7,10 +7,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title>活動報名平台-首頁</title>
-	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
-	<link rel="stylesheet" href="css/templatemo-xtra-blog.css">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"> <!-- https://fonts.google.com/ -->
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
+	<link rel="stylesheet" type="text/css" href="css/templatemo-xtra-blog.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"> <!-- https://fonts.google.com/ -->
 </head>
 
 <body>
