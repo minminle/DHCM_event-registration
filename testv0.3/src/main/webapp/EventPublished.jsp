@@ -100,21 +100,34 @@ if(request.getParameter("eMail") !=null &&
 					<label for="creatorID">帳號</label>
 				    <input type="text" placeholder="輸入您的Gmail帳號..." name="eMail" required>
 				    </h3>
-						<br><br>
+				    <% 	//帳號輸入錯誤時，會出現您輸入的錯誤密碼
+						if(request.getParameter("eMail")!= null){ %>
+						value = '<%=request.getParameter("eMail") %>'
+					<%}%>				    
+						<br>
+						<br>
 						
 				    <h3>
 				    <label for="creatorPWD">密碼</label>
 				    <input type="password" placeholder="輸入您的密碼..." name="creatorPwd" required>
 				    </h3>
-						<br><br>	
-								
+				    <% 	//密碼輸入錯誤時，會出現您輸入的錯誤密碼
+						if(request.getParameter("creatorPwd")!= null){ %>
+						value = '<%=request.getParameter("creatorPwd") %>'
+					<%}%>
+						<br>
+						<br>
+						
 				    <h4> <button type="submit" name="loginBtn">登入</button>
-						</div></h4>
+						</div>
+					</h4>
+					
 					<br>
 					
 				<h4> <div class="container" align="center">
 					<a href="signUp.html" class="signbtn">註冊</a>
 				</div></h4>
+				
 			</form>         
                         
 			<!--尾巴邊邊線條-->
