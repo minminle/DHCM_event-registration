@@ -1,7 +1,9 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html lang="en">
+<%@page contentType="text/html"%>
+<%@page pageEncoding="UTF-8"%>
+<%@page import="java.sql.*"%>
+
+<html>
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,13 +19,14 @@
 	Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
 	Connection con=DriverManager.getConnection("jdbc:ucanaccess://C:\\Users\\s0979\\OneDrive\\文件\\GitHub\\DHCM_take-a-leave\\testv0.3\\src\\main\\webapp\\dhcm.accdb;");
 	Statement smt= con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
-	String creatoracc =request.getParameter("eMail");
-	String creatorpwd =request.getParameter("creatorPwd");
+	String eMail =request.getParameter("eMail");
+	String creatorPwd =request.getParameter("creatorPwd");
+	String creattorName =request.getParameter("creattorName");
 	//String sql;s
 	//sql="INSERT INTO member VALUES('"+eMail+"','"+creatorPwd+"')";
-	smt.execute("INSERT INTO member (eMail, creatorPwd) VALUES('"+eMail+"','"+creatorPwd+"')");
+	smt.execute("INSERT INTO creator (eMail, creatorPwd, creatorName ) VALUES('"+eMail+"','"+creatorPwd+"','"+creatorName+"')");
 	con.close();
-	response.sendRedirect("Activities published.jsp");
+	response.sendRedirect("https://www.youtube.com/");
 	%>
 	
 </body>
