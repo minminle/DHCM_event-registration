@@ -125,7 +125,7 @@ if(request.getParameter("eMail") !=null &&
 					<br>
 					
 				<h4> <div class="container" align="center">
-					<a href="signUp.html" class="signbtn">註冊</a>
+					<a href="NewFile.html" class="signbtn">註冊</a>
 				</div></h4>
 				
 			</form>         
