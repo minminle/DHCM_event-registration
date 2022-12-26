@@ -4,23 +4,23 @@
 <jsp:useBean id='objDBConfig' scope='session' class='hitstd.group.tool.database.DBConfig' />
 <%
 session.setAttribute("access","n"); //access="n"
-if(request.getParameter("memberid") !=null &&
-	request.getParameter("memberpwd") !=null){
+if(request.getParameter("eMail") !=null &&
+	request.getParameter("creatorPwd") !=null){
 	Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
 	//Connection con=DriverManager.getConnection("jdbc:ucanaccess://C:\\Users\\s0979\\OneDrive\\文件\\GitHub\\test_11-23\\src\\main\\webapp\\member.accdb;");
 	Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
 	Statement smt= con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
 	
-	String getpaperdata = "SELECT * FROM member WHERE memberid='"+
-			request.getParameter("memberid")+"' AND memberpwd='" +
-			request.getParameter("memberpwd")+"'";
+	String getpaperdata = "SELECT * FROM creator WHERE eMail='"+
+			request.getParameter("eMail")+"' AND creatorPwd='" +
+			request.getParameter("creatorPwd")+"'";
 	ResultSet paperrs = smt.executeQuery(getpaperdata);
 	
 	if(paperrs.next()){
 		session.setAttribute("access","y"); //access="y"  
-		session.setAttribute("accessid",request.getParameter("memberid"));
+		session.setAttribute("eMail",request.getParameter("eMail"));
 		session.setMaxInactiveInterval(5);
-		response.sendRedirect("accesspagea.jsp");
+		response.sendRedirect("https://www.youtube.com/");
 	}else
 		out.println("帳號密碼不符！請重新登入");
 	}
