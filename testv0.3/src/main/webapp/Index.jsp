@@ -29,10 +29,10 @@
             <nav class="tm-nav" id="tm-nav">            
                 <ul>
                     <li class="tm-nav-item active"><a href="Index.jsp" class="tm-nav-link">
-                        <img src="img/Home.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>首頁</a></li>		<!-- 原網頁Blog Home -->
+                        <img src="img/Home.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>首頁</b></a></li>		<!-- 原網頁Blog Home -->
                         												    <!-- 「&nbsp;」代表空白 -->
                     <li class="tm-nav-item"><a href="EventPublished.jsp" class="tm-nav-link">
-                        <img src="img/Published_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動刊登</a></li>	<!-- 原網頁Single Post -->
+                        <img src="img/Published_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動刊登</b></a></li>	<!-- 原網頁Single Post -->
                         
                 </ul>
             </nav>
@@ -78,6 +78,10 @@
                     <hr class="tm-hr-primary tm-mb-55">
                 </div>
             </div>
+            
+
+            
+            
             
 			<!--尾巴邊邊線條-->
 			<footer class="row tm-row">
