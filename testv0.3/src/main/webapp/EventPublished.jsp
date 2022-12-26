@@ -54,10 +54,10 @@ if(request.getParameter("memberid") !=null &&
             <nav class="tm-nav" id="tm-nav">            
                 <ul>
                     <li class="tm-nav-item"><a href="Index.jsp" class="tm-nav-link">
-                        <img src="img/Home.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>首頁</a></li>		<!-- 原網頁Blog Home -->
+                        <img src="img/Home.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>首頁</b></a></li>		<!-- 原網頁Blog Home -->
                         												    <!-- 「&nbsp;」代表空白 -->
                     <li class="tm-nav-item active"><a href="EventPublished.jsp" class="tm-nav-link">
-                        <img src="img/Published_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動刊登</a></li>	<!-- 原網頁Single Post -->
+                        <img src="img/Published_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動刊登</b></a></li>	<!-- 原網頁Single Post -->
                         
                 </ul>
             </nav>
@@ -92,12 +92,31 @@ if(request.getParameter("memberid") !=null &&
                 </div>
             </div>
             
-            
-            
-            
-            
-            
-            
+            <h1><b><center>單位登入</center></b></h1>
+            <br>
+			<form method="post">
+				<div class="container" align="center">
+					<h3>
+					<label for="creatorID">帳號</label>
+				    <input type="text" placeholder="輸入您的Gmail帳號..." name="eMail" required>
+				    </h3>
+						<br><br>
+						
+				    <h3>
+				    <label for="creatorPWD">密碼</label>
+				    <input type="password" placeholder="輸入您的密碼..." name="creatorPwd" required>
+				    </h3>
+						<br><br>	
+								
+				    <h4> <button type="submit" name="loginBtn">登入</button>
+						</div></h4>
+					<br>
+					
+				<h4> <div class="container" align="center">
+					<a href="signUp.html" class="signbtn">註冊</a>
+				</div></h4>
+			</form>         
+                        
 			<!--尾巴邊邊線條-->
 			<footer class="row tm-row">
                 <hr class="col-12">
