@@ -1,9 +1,12 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<title>活動報名平台-註冊帳號</title>
+	<title>活動報名平台-首頁</title>
 	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
 	<link rel="stylesheet" type="text/css" href="css/templatemo-xtra-blog.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -26,10 +29,10 @@
             <nav class="tm-nav" id="tm-nav">            
                 <ul>
                     <li class="tm-nav-item"><a href="Index.jsp" class="tm-nav-link">
-                        <img src="img/Home.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>首頁</b></a></li>		<!-- 原網頁Blog Home -->
-                        												    <!-- 「&nbsp;」代表空白 -->
+                        <img src="img/Home.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>首頁</b></a></li>		<!-- åç¶²é Blog Home -->
+                        												    <!-- ã&nbsp;ãä»£è¡¨ç©ºç½ -->
                     <li class="tm-nav-item"><a href="EventPublished.jsp" class="tm-nav-link">
-                        <img src="img/Published_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動刊登</b></a></li>	<!-- 原網頁Single Post -->
+                        <img src="img/Published_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動刊登</b></a></li>	<!-- åç¶²é Single Post -->
                         
                 </ul>
             </nav>
@@ -51,7 +54,7 @@
                 </a>
             </div>
             <p class="tm-mb-80 pr-5 text-white">
-                歡迎來到活動報名的平台~
+                歡迎來到活動報名平台～
             </p>
         </div>
     </header>
@@ -64,12 +67,31 @@
                 </div>
             </div>
             
+            <form method="POST" style="text-align:center" action="SignUp_DBInsertInto.jsp">
+				<div><h1><b>單位登入</b></h1></div>
+				<br/>
+				<div><h3>單位名稱:&nbsp;
+					 <input type="text" placeholder="請輸入單位名稱..." name="name" /></h3></div>
+				
+				<br/>
+				<div><h3>帳&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;號:&nbsp;
+					 <input type="text" placeholder="請輸入帳號..." name="eMail" ></h3></div>
+				
+				<br/>
+				<div><h3>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;碼:&nbsp;
+					 <input type="password" placeholder="請輸入密碼..." name="creatorPwd" ></h3></div>
+				
+				<br/>
+				<div>
+				    <h3><input type="reset" id="send" value="清除" />&nbsp;&nbsp;
+				    	<input type="submit" id="send" value="送出" />			
+				    </h3>
+				</div> 
+			</form>
             
-
             
             
-            
-			<!--尾巴邊邊線條-->
+			<!--尾巴灰線條-->
 			<footer class="row tm-row">
                 <hr class="col-12">
 	                <div class="col-md-6 col-12 tm-color-gray">Design by：李嘉珉、孫合佳、楊宜蓁</div>
