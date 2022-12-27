@@ -6,7 +6,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<title>活動報名平台-首頁</title>
+	<title>活動報名平台-註冊</title>
 	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
 	<link rel="stylesheet" type="text/css" href="css/templatemo-xtra-blog.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -68,7 +68,7 @@
             </div>
             
             <form method="POST" style="text-align:center" action="SignUp_DBInsertInto.jsp">
-				<div><h1><b>單位登入</b></h1></div>
+				<div><h1><b>註冊帳號</b></h1></div>
 				<br/>
 				<div><h3>單位名稱:&nbsp;
 					 <input type="text" placeholder="請輸入單位名稱..." name="name" /></h3></div>
