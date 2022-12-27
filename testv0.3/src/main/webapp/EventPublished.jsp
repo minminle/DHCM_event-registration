@@ -112,7 +112,7 @@ if(request.getParameter("eMail") !=null &&
 				<div>
 				    <h3><button type="submit" name="loginBtn" >登入</button>
 				    <br/><br/>
-				    <a href="NewFile.html" class="signbtn">註冊</a>			
+				    <a href="NewFile.jsp" class="signbtn">註冊</a>			
 				    </h3>
 				</div> 
 			</form>
