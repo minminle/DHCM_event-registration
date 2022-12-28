@@ -76,7 +76,7 @@
             <div class="row tm-row">
                 <article class="col-12 col-md-6 tm-post">
                     <hr class="tm-hr-primary">
-                    <a href="post.html" class="effect-lily tm-post-link tm-pt-60">
+                    <a href="EventInformation.jsp" class="effect-lily tm-post-link tm-pt-60">
                         <div class="tm-post-link-inner">
                             <img src="img/img-01.jpg" alt="Image" class="img-fluid">                            
                         </div>
@@ -84,24 +84,24 @@
                         <h2 class="tm-pt-30 tm-color-primary tm-post-title">圓來就是為了遇健你</h2>
                     </a>                    
                     <p class="tm-pt-30">
-                        寒冷的天冷冷的心，修健系來暖你心。
+                        寒冷的天冷冷的心，健管系來暖你心。
                         <br>冬至就是要來一碗熱呼呼的紅豆湯圓，
-                        <br>在寒冷的冬天裡一起休揪來吃湯圓吧^^
+                        <br>在寒冷的冬天裡一起相約來吃湯圓吧^^
                         <br><strong>限量50碗</strong>湯圓，全校師生免費領取！！！
                     </p>
                     <div class="d-flex justify-content-between tm-pt-45">
                         <span class="tm-color-primary">冬至 . 系會</span>
-                        <span class="tm-color-primary">DEC 16, 2022</span>
+                        <span class="tm-color-primary">DEC 22, 2022</span>
                     </div>
                     <hr>
                     <div class="d-flex justify-content-between">
                         <span>36 comments</span>
-                        <span>by ntunhs lihp</span>
+                        <span>by ntunhs dhcm</span>
                     </div>
                 </article>
                 <article class="col-12 col-md-6 tm-post">
                     <hr class="tm-hr-primary">
-                    <a href="post.html" class="effect-lily tm-post-link tm-pt-60">
+                    <a href="EventInformation.jsp" class="effect-lily tm-post-link tm-pt-60">
                         <div class=" tm-post-link-inner">
                             <img src="img/img-02.jpg" alt="Image" class="img-fluid">                            
                         </div>
@@ -124,7 +124,7 @@
                 </article>
                 <article class="col-12 col-md-6 tm-post">
                     <hr class="tm-hr-primary">
-                    <a href="post.html" class="effect-lily tm-post-link tm-pt-20">
+                    <a href="EventInformation.jsp" class="effect-lily tm-post-link tm-pt-20">
                         <div class="tm-post-link-inner">
                             <img src="img/img-03.jpg" alt="Image" class="img-fluid">
                         </div>
@@ -146,7 +146,7 @@
                 </article>
                 <article class="col-12 col-md-6 tm-post">
                     <hr class="tm-hr-primary">
-                    <a href="post.html" class="effect-lily tm-post-link tm-pt-20">
+                    <a href="EventInformation.jsp" class="effect-lily tm-post-link tm-pt-20">
                         <div class="tm-post-link-inner">
                             <img src="img/img-04.jpg" alt="Image" class="img-fluid">
                         </div>
@@ -179,7 +179,7 @@
                             <li class="tm-paging-item active">
                                 <a href="#" class="mb-2 tm-btn tm-paging-link">1</a>
                             </li>
-                            <li class="tm-paging-item">
+                            <!-- <li class="tm-paging-item">
                                 <a href="#" class="mb-2 tm-btn tm-paging-link">2</a>
                             </li>
                             <li class="tm-paging-item">
@@ -187,7 +187,7 @@
                             </li>
                             <li class="tm-paging-item">
                                 <a href="#" class="mb-2 tm-btn tm-paging-link">4</a>
-                            </li>
+                            </li> -->
                         </ul>
                     </nav>
                 </div>                
