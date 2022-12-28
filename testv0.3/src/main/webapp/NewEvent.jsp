@@ -31,16 +31,16 @@
                     <li class="tm-nav-item"><a href="Index.jsp" class="tm-nav-link">
                         <img src="img/Home.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>首頁</b></a></li>		<!-- 原網頁Blog Home -->
                         												    <!-- 「&nbsp;」代表空白 -->
-                    <li class="tm-nav-item"><a href="" class="tm-nav-link">
+                    <li class="tm-nav-item"><a href="UnitInformation.jsp" class="tm-nav-link">
                         <img src="img/Introduction_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>單位簡介</b></a></li>	<!-- 原網頁Single Post -->
                         
-                         <li class="tm-nav-item"><a href="" class="tm-nav-link">
+                         <li class="tm-nav-item"><a href="EventList.jsp" class="tm-nav-link">
                         <img src="img/Details.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動清單</b></a></li>
                         
-                         <li class="tm-nav-item active"><a href="" class="tm-nav-link">
+                         <li class="tm-nav-item active"><a href="NewEvent.jsp" class="tm-nav-link">
                         <img src="img/Add.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>新增活動</b></a></li>
                         
-                         <li class="tm-nav-item"><a href="" class="tm-nav-link">
+                         <li class="tm-nav-item"><a href="EventReview.jsp" class="tm-nav-link">
                         <img src="img/Review_1.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>報名審核</b></a></li>
                         </ul>
                         </nav>
@@ -74,20 +74,83 @@
                     <hr class="tm-hr-primary tm-mb-55">
                 </div>
             </div>
-             <!-- 註冊帳號輸入區 -->
-            <form method="POST" style="text-align:center" action="SignUp_DBInsertInto.jsp">
-				<div><h1><b>註冊帳號</b></h1></div>
-				<br/>
-				<div><h3>單位名稱:&nbsp;
-					 <input type="text" placeholder="請輸入單位名稱..." name="creatorName" /></h3></div>
+             <!-- 新增活動 -->
+            <form method="POST" style="text-align:center" action="NewEvent.jsp">
+				
+				<div><h3>活動名稱:&nbsp;
+					 <input type="text" placeholder="請輸入活動名稱..." name="" /></h3></div>
 				
 				<br/>
-				<div><h3>帳&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;號:&nbsp;
-					 <input type="text" placeholder="請輸入帳號..." name="eMail" ></h3></div>
+				<div><h3>活動簡介:&nbsp;
+					 <input type="text" placeholder="請輸入簡介..." name="" ></h3></div>
 				
 				<br/>
-				<div><h3>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;碼:&nbsp;
-					 <input type="password" placeholder="請輸入密碼..." name="creatorPwd" ></h3></div>
+				<div><h3>活動日期:&nbsp;
+					 <input type="date" placeholder="選擇日期..." name="" ></h3>
+					
+             <script>
+             
+				<meta http-equiv='Content-Type' content='text/html; charset=gb2312'> 
+				   function YYYYMMDDstart()   
+				   {   
+				           MonHead = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];   
+				    
+				           //先給年下拉框賦內容   
+				           var y  = new Date().getFullYear();   
+				           for (var i = (y-30); i < (y+30); i++) //以今年為準，前30年，後30年   
+				                   document.reg_testdate.YYYY.options.add(new Option(" "+ i +" 年", i));   
+				    
+				           //賦月份的下拉框   
+				           for (var i = 1; i < 13; i++)   
+				                   document.reg_testdate.MM.options.add(new Option(" " + i + " 月", i));   
+				    
+				           document.reg_testdate.YYYY.value = y;   
+				           document.reg_testdate.MM.value = new Date().getMonth() + 1;   
+				           var n = MonHead[new Date().getMonth()];   
+				           if (new Date().getMonth() ==1 && IsPinYear(YYYYvalue)) n++;   
+				                writeDay(n); //賦日期下拉框Author:meizz   
+				           document.reg_testdate.DD.value = new Date().getDate();   
+				   }   
+				   if(document.attachEvent)   
+				       window.attachEvent("onload", YYYYMMDDstart);   
+				   else   
+				       window.addEventListener('load', YYYYMMDDstart, false);   
+				   function YYYYDD(str) //年發生變化時日期發生變化(主要是判斷閏平年)   
+				   {   
+				           var MMvalue = document.reg_testdate.MM.options[document.reg_testdate.MM.selectedIndex].value;   
+				           if (MMvalue == ""){ var e = document.reg_testdate.DD; optionsClear(e); return;}   
+				           var n = MonHead[MMvalue - 1];   
+				           if (MMvalue ==2 && IsPinYear(str)) n++;   
+				                writeDay(n)   
+				   }   
+				   function MMDD(str)   //月發生變化時日期聯動   
+				   {   
+				        var YYYYvalue = document.reg_testdate.YYYY.options[document.reg_testdate.YYYY.selectedIndex].value;   
+				        if (YYYYvalue == ""){ var e = document.reg_testdate.DD; optionsClear(e); return;}   
+				        var n = MonHead[str - 1];   
+				        if (str ==2 && IsPinYear(YYYYvalue)) n++;   
+				       writeDay(n)   
+				   }   
+				   function writeDay(n)   //據條件寫日期的下拉框   
+				   {   
+				           var e = document.reg_testdate.DD; optionsClear(e);   
+				           for (var i=1; i<(n+1); i++)   
+				                e.options.add(new Option(" "+ i + " 日", i));   
+				   }   
+				   function IsPinYear(year)//判斷是否閏平年   
+				   {     return(0 == year%4 && (year%100 !=0 || year%400 == 0));}   
+				   function optionsClear(e)   
+				   {   
+				        e.options.length = 1;   
+				   }   
+				   //--></script></div>
+				   
+				   <br/>
+				<div><h3>活動時間:&nbsp;
+					 <input type="date" placeholder="請輸入簡介..." name="" ></h3></div>
+				
+				<br/>
+
 				
 				<br/>
 				<div>
