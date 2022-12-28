@@ -31,16 +31,16 @@
                     <li class="tm-nav-item"><a href="Index.jsp" class="tm-nav-link">
                         <img src="img/Home.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>首頁</b></a></li>		<!-- 原網頁Blog Home -->
                         												    <!-- 「&nbsp;」代表空白 -->
-                    <li class="tm-nav-item active"><a href="EventPublished.jsp" class="tm-nav-link">
+                    <li class="tm-nav-item active"><a href="UnitInformation.jsp" class="tm-nav-link">
                         <img src="img/Introduction_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>單位簡介</b></a></li>	<!-- 原網頁Single Post -->
                     
-                    <li class="tm-nav-item"><a href="EventPublished.jsp" class="tm-nav-link">
+                    <li class="tm-nav-item"><a href="EventList.jsp" class="tm-nav-link">
                         <img src="img/Details.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動清單</b></a></li>	
                     
-                    <li class="tm-nav-item"><a href="EventPublished.jsp" class="tm-nav-link">
+                    <li class="tm-nav-item"><a href="NewEvent.jsp" class="tm-nav-link">
                         <img src="img/Add.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>新增活動</b></a></li>	
                     
-                    <li class="tm-nav-item"><a href="EventPublished.jsp" class="tm-nav-link">
+                    <li class="tm-nav-item"><a href="EventReview.jsp" class="tm-nav-link">
                         <img src="img/Review_1.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>報名審核</b></a></li>	
                         
                 </ul>
