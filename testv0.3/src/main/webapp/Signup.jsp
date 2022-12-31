@@ -29,7 +29,7 @@
             <nav class="tm-nav" id="tm-nav">            
                 <ul>
                     <li class="tm-nav-item"><a href="Index.jsp" class="tm-nav-link">
-                        <img src="img/Home.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>首頁</b></a></li>		<!-- åç¶²é Blog Home -->
+                        <img src="img/Home.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動資訊</b></a></li>		<!-- åç¶²é Blog Home -->
                         												    <!-- ã&nbsp;ãä»£è¡¨ç©ºç½ -->
                     <li class="tm-nav-item"><a href="EventPublished.jsp" class="tm-nav-link">
                         <img src="img/Published_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動刊登</b></a></li>	<!-- åç¶²é Single Post -->
