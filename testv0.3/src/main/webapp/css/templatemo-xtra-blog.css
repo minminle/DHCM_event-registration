@@ -44,7 +44,7 @@ hr {
     overflow-y: scroll;
     scrollbar-width: none;
     -ms-overflow-style: none;
-    padding: 30px;
+    padding: 20px;
     width: 100%;
     height: 100%; 
 }
