@@ -31,7 +31,7 @@ if(request.getParameter("eMail") !=null &&
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<title>活動報名平台-活動刊登</title>
+	<title>活動報名平台-單位登入</title>
 	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
 	<link rel="stylesheet" href="css/templatemo-xtra-blog.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
@@ -54,7 +54,7 @@ if(request.getParameter("eMail") !=null &&
             <nav class="tm-nav" id="tm-nav">            
                 <ul>
                     <li class="tm-nav-item"><a href="Index.jsp" class="tm-nav-link">
-                        <img src="img/Home.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>首頁</b></a></li>		<!-- 原網頁Blog Home -->
+                        <img src="img/Home.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動資訊</b></a></li>		<!-- 原網頁Blog Home -->
                         												    <!-- 「&nbsp;」代表空白 -->
                     <li class="tm-nav-item active"><a href="EventPublished.jsp" class="tm-nav-link">
                         <img src="img/Published_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動刊登</b></a></li>	<!-- 原網頁Single Post -->
