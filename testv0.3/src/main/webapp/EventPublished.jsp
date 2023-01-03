@@ -20,7 +20,7 @@ if(request.getParameter("eMail") !=null &&
 		session.setAttribute("access","y"); //access="y"  
 		session.setAttribute("eMail",request.getParameter("eMail"));
 		session.setMaxInactiveInterval(5);
-		response.sendRedirect("https://www.youtube.com/");
+		response.sendRedirect("UnitInformation.jsp");
 	}else
 		out.println("帳號密碼不符！請重新登入");
 	}
@@ -31,7 +31,7 @@ if(request.getParameter("eMail") !=null &&
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<title>活動報名平台-單位登入</title>
+	<title>活動報名平台-我要辦活動</title>
 	<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
 	<link rel="stylesheet" href="css/templatemo-xtra-blog.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">

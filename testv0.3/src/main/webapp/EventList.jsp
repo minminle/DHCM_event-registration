@@ -6,7 +6,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<title>活動報名平台-新增活動</title>
+	<title>活動報名平台-活動清單與審核</title>
 	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css?v=<?=time()?"> <!-- https://fontawesome.com/ -->
 	<link rel="stylesheet" type="text/css" href="css/templatemo-xtra-blog.css?v=<?=time()?">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css?v=<?=time()?">
@@ -26,24 +26,19 @@
                 <h1 class="text-center">活動報名平台</h1>
             </div>
             
-          <nav class="tm-nav" id="tm-nav">            
+            <nav class="tm-nav" id="tm-nav">            
                 <ul>
-                    <li class="tm-nav-item"><a href="Index.jsp" class="tm-nav-link">
-                        <img src="img/Home.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>首頁</b></a></li>		<!-- 原網頁Blog Home -->
-                        												    <!-- 「&nbsp;」代表空白 -->
                     <li class="tm-nav-item"><a href="UnitInformation.jsp" class="tm-nav-link">
-                        <img src="img/Introduction_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>單位簡介</b></a></li>	<!-- 原網頁Single Post -->
+                        <img src="img/Introduction_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>修改資料</b></a></li>	<!-- 原網頁Single Post -->
                         
-                         <li class="tm-nav-item active"><a href="EventList.jsp" class="tm-nav-link">
-                        <img src="img/Details.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動清單</b></a></li>
+                    <li class="tm-nav-item active"><a href="EventList.jsp" class="tm-nav-link">
+                        <img src="img/Review_1.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動清單與審核</b></a></li>
                         
-                         <li class="tm-nav-item "><a href="NewEvent.jsp" class="tm-nav-link">
-                        <img src="img/Add.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>新增活動</b></a></li>
-                        
-                         <li class="tm-nav-item"><a href="EventReview.jsp" class="tm-nav-link">
-                        <img src="img/Review_1.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>報名審核</b></a></li>
-                        </ul>
-                        </nav>
+                    <li class="tm-nav-item"><a href="ReviseEvent.jsp" class="tm-nav-link">
+                        <img src="img/Revision.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>新增與修改</b></a></li>
+                                             
+                </ul>
+            </nav>
                         
                     <div class="tm-mb-65">
                 <a rel="nofollow" href="https://fb.com/templatemo" class="tm-social-link">
