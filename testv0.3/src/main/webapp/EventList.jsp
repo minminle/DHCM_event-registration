@@ -65,8 +65,11 @@
     <div class="container-fluid">
         <main class="tm-main">
             <div class="row tm-row tm-mb-45">
-                <div class="col-12">
+                <div class="col-12" style="text-align:right">
+                    
+                    您好～歡迎登入！
                     <hr class="tm-hr-primary tm-mb-55">
+                    
                 </div>
             </div>
              <!-- 註冊帳號輸入區 -->
