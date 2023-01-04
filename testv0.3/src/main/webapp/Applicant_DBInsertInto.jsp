@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=BIG5"
     pageEncoding="BIG5"%>
 <!DOCTYPE html>
-<jsp:useBean id='objDBConfig' scope='application' class='histd.group.tool.database.DBConfig' />
+<jsp:useBean id='objDBConfig' scope='application' class='hitstd.group.tool.database.DBConfig' />
 <html>
 <head>
 </head>
