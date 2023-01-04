@@ -88,8 +88,10 @@
 			 
             %>
             <label for="applicantName" style="color:#00999;text-align:right;">主辦單位</label>
-            <label for="applicantName" style="color:#00999;text-align:right;">主辦單位</label>
-            
+            <label for="applicantName" style="color:#00999;text-align:right;">活動名稱</label>
+            <input type="radio" name="view" value="rabbit" checked>志工服務<br>
+            <input type="radio" name="view" value="rabbit" checked>講座<br>
+            <input type="radio" name="view" value="rabbit" checked>志工服務<br>
             
             
             
