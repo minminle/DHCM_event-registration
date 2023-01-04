@@ -57,7 +57,7 @@ if(request.getParameter("eMail") !=null &&
                         <img src="img/Home.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動資訊</b></a></li>		<!-- 原網頁Blog Home -->
                         												    <!-- 「&nbsp;」代表空白 -->
                     <li class="tm-nav-item active"><a href="EventPublished.jsp" class="tm-nav-link">
-                        <img src="img/Published_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動刊登</b></a></li>	<!-- 原網頁Single Post -->
+                        <img src="img/Published_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>我要辦活動</b></a></li>	<!-- 原網頁Single Post -->
                         
                 </ul>
             </nav>
