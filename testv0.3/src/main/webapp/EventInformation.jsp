@@ -212,7 +212,6 @@
 				            <h3><input type="submit" id="send" value="我要報名" /></h3>
 				            </div> 
 			          </form>
-                 
                  </div>
            	</div>
     		<div style="clear:both;">
