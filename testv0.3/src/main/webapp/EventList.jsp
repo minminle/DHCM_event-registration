@@ -72,28 +72,19 @@
                     
                 </div>
             </div>
-             <!-- 註冊帳號輸入區 -->
-            <form method="POST" style="text-align:center" action="SignUp_DBInsertInto.jsp">
-				<div><h1><b>註冊帳號</b></h1></div>
-				<br/>
-				<div><h3>單位名稱:&nbsp;
-					 <input type="text" placeholder="請輸入單位名稱..." name="creatorName" /></h3></div>
-				
-				<br/>
-				<div><h3>帳&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;號:&nbsp;
-					 <input type="text" placeholder="請輸入帳號..." name="eMail" ></h3></div>
-				
-				<br/>
-				<div><h3>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;碼:&nbsp;
-					 <input type="password" placeholder="請輸入密碼..." name="creatorPwd" ></h3></div>
-				
-				<br/>
-				<div>
-				    <h3><input type="reset" id="send" value="清除" />&nbsp;&nbsp;
-				    	<input type="submit" id="send" value="送出" />			
-				    </h3>
-				</div> 
-			</form>
+            
+            <table style="width:100%" >
+			  <tr>
+			    <th>活動編號</th>
+			    <th>活動名稱</th> 
+			    <th>活動日期</th>
+			    <th>活動地點</th>
+			    <th>名額限制</th>
+			    <th>已入取名額</th>
+			    <th>活動狀態</th>
+			    <th>簽核</th>
+			  </tr>
+			</table>
             
             
     <!--尾巴灰線條-->
