@@ -29,7 +29,7 @@
             <nav class="tm-nav" id="tm-nav">            
                 <ul>
                     <li class="tm-nav-item active"><a href="UnitInformation.jsp" class="tm-nav-link">
-                        <img src="img/Introduction_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>修改資料</b></a></li>
+                        <img src="img/Introduction_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>基本資料</b></a></li>
                         
                     <li class="tm-nav-item"><a href="EventList.jsp" class="tm-nav-link">
                         <img src="img/Review_1.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動清單與審核</b></a></li>
@@ -70,9 +70,31 @@
                     您好～歡迎登入！<br>
                     
                     <hr class="tm-hr-primary tm-mb-55">                    
-                </div>
-                
-            </div>
+                 <form method="POST" style="text-align:center" action="SignUp_DBInsertInto.jsp">
+				<div> 
+				<input type="submit" value="插入圖片" style="image:" HEIGHT="200" WIDTH="200"/>
+				<br/>
+				<br/>
+				<br/>
+				<div><h3>單位名稱:&nbsp;
+					 <input type="text" placeholder="請輸入單位名稱..." name="creatorName" /></h3></div>
+				
+				<br/>
+				<div><h3>電子郵件:&nbsp;
+					 <input type="text" placeholder="請輸入帳號..." name="eMail" ></h3></div>
+				
+				<br/>
+				<div><h3>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;碼:&nbsp;
+					 <input type="password" placeholder="請輸入密碼..." name="creatorPwd" ></h3></div>
+				
+				<br/>
+				<div>
+				    <h4>
+				   		<input type="reset" id="send" value="修改" />&nbsp;&nbsp;
+				    	<input type="submit" id="send" value="儲存" />			
+				    </h4>
+				</div> 
+			</form>
             
             
             
