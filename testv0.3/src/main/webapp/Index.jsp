@@ -170,9 +170,11 @@
                         <br>※特別提醒：
                         <br>這堂課<b><u>不是</u>寵物溝通</b>課程；<b>不針對貓主子</b>
                         <br>&nbsp;
-                        <br>主講人：寵之幸實業有限公司-總經理
+                        <br>主講人：寵之幸實業有限公司-總經理李素幸 (Grace Lee )
                         <br>&nbsp;
-                        <br>講師：國立台灣大學政策與管理研究所教授
+                        <br>時間：112/01/09(一)19：30-21:30
+                        <br>&nbsp;
+                        <br>地點：線上課程( <a rel="nofollow" href="https://us06web.zoom.us/j/8813669049?pwd=2bbekOYNyzAlBv1NQqhKETzywP0fbi.1">ZOOM會議室</a>)
                         <br>更多詳情<a rel="nofollow" href="https://www.facebook.com/five5plus" target="_blank">寵之幸 Five5.Plus</a>瀏覽！
                     </p>
                     <div class="d-flex justify-content-between tm-pt-45">
