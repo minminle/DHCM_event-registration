@@ -81,22 +81,42 @@
                             <img src="img/img-01.jpg" alt="Image" class="img-fluid">                            
                         </div>
                         <span class="position-absolute tm-new-badge">New</span>
-                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">圓來就是為了遇健你</h2>
+                        <%
+						session.setAttribute("creator", "健康科技學院/協辦社團法人臺東縣都蘭診所陪你回家協會");
+						session.setAttribute("event", "電影欣賞-陪你回家");
+						session.setAttribute("intro", "一位年輕醫師因為父親倒下，臨危受命回鄉接下家族的診所，卻面臨大醫院和小鎮醫師在看病、診斷、治療等觀念的巨大差異...面對病人想回家的意念，年輕醫師開始初診訪視病患，漸漸理解在宅醫療，並學習與不同職類的醫療照護工作人員合作。支援病人完成最終的願望，也看見病人回到家後還能在最後一哩路，活出自己的樣貌。");
+						session.setAttribute("date", "112/01/12(四)");
+						session.setAttribute("place", "國北護學思樓F515觀頤講堂");
+						session.setAttribute("eventstart", "10：00");
+						session.setAttribute("eventend", "12：00");
+						session.setAttribute("starttime", "即日起");
+						session.setAttribute("endtime", "額滿為止");
+						session.setAttribute("applicantlimited", "60人");
+						session.setAttribute("eventapplicant", "額滿為止");
+						%>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">電影欣賞-陪你回家</h2>
                     </a>                    
                     <p class="tm-pt-30">
-                        寒冷的天冷冷的心，健管系來暖你心。
-                        <br>冬至就是要來一碗熱呼呼的紅豆湯圓，
-                        <br>在寒冷的冬天裡一起相約來吃湯圓吧^^
-                        <br><strong>限量50碗</strong>湯圓，全校師生免費領取！！！
+                        <br>【電影簡介】
+                        <br><b>生命與希望的篇章——在宅醫療的年輕醫師與「夥伴」們實踐在宅醫療全力以赴</b>
+                        <br>&nbsp;
+                        <br>一位年輕醫師因為父親倒下，臨危受命回鄉接下家族的診所，卻面臨大醫院和小鎮醫師在看病、診斷、治療等觀念的巨大差異...                 
+                        <br>&nbsp;
+                        <br>【電影公播說明】
+                        <br>時間：112/01/12(四)10：00-12:00
+                        <br>地點：學思樓F515觀頤講堂
+                        <br>片長100分鐘，普遍級
+                        <br>&nbsp;
+                        <br>※公播後<b>一周內</b>提供觀後心得500-1000字心得一篇者，可獲得精美小禮物一份！！！
                     </p>
                     <div class="d-flex justify-content-between tm-pt-45">
-                        <span class="tm-color-primary">冬至 . 系會</span>
-                        <span class="tm-color-primary">DEC 22, 2022</span>
+                        <span class="tm-color-primary">學習 . 電影</span>
+                        <span class="tm-color-primary">JAN. 12, 2023</span>
                     </div>
                     <hr>
                     <div class="d-flex justify-content-between">
-                        <span>36 comments</span>
-                        <span>by ntunhs dhcm</span>
+                        <span>36 comments</span> 
+                        <span>by健康科技學院</span>
                     </div>
                 </article>
                 
