@@ -85,6 +85,20 @@
 			    <th>簽核</th>
 			  </tr>
 			  
+			  <%
+			  	Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
+				Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
+				Statement smt= con.createStatement();
+				String sql = "SELECT * FROM eventInformation";
+				ResultSet rs = smt.executeQuery(sql);
+				int num=1;
+				
+				while(rs.next()){
+					out.println("<tr><td>" + num + "</td><td>" + rs.getString("Name") + "</td><td>" + rs.getString("國文") + "</td></tr>");
+					num++;
+				}
+			
+			  %>
 			  
 			</table>
             
