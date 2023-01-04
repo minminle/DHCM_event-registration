@@ -6,7 +6,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<title>活動報名平台-新增活動</title>
+	<title>活動報名平台-活動清單與審核</title>
 	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css?v=<?=time()?"> <!-- https://fontawesome.com/ -->
 	<link rel="stylesheet" type="text/css" href="css/templatemo-xtra-blog.css?v=<?=time()?">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css?v=<?=time()?">
@@ -26,24 +26,19 @@
                 <h1 class="text-center">活動報名平台</h1>
             </div>
             
-          <nav class="tm-nav" id="tm-nav">            
+            <nav class="tm-nav" id="tm-nav">            
                 <ul>
-                    <li class="tm-nav-item"><a href="Index.jsp" class="tm-nav-link">
-                        <img src="img/Home.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>首頁</b></a></li>		<!-- 原網頁Blog Home -->
-                        												    <!-- 「&nbsp;」代表空白 -->
                     <li class="tm-nav-item"><a href="UnitInformation.jsp" class="tm-nav-link">
-                        <img src="img/Introduction_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>單位簡介</b></a></li>	<!-- 原網頁Single Post -->
+                        <img src="img/Introduction_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>修改資料</b></a></li>	<!-- 原網頁Single Post -->
                         
-                         <li class="tm-nav-item active"><a href="EventList.jsp" class="tm-nav-link">
-                        <img src="img/Details.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動清單</b></a></li>
+                    <li class="tm-nav-item active"><a href="EventList.jsp" class="tm-nav-link">
+                        <img src="img/Review_1.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動清單與審核</b></a></li>
                         
-                         <li class="tm-nav-item "><a href="NewEvent.jsp" class="tm-nav-link">
-                        <img src="img/Add.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>新增活動</b></a></li>
-                        
-                         <li class="tm-nav-item"><a href="EventReview.jsp" class="tm-nav-link">
-                        <img src="img/Review_1.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>報名審核</b></a></li>
-                        </ul>
-                        </nav>
+                    <li class="tm-nav-item"><a href="ReviseEvent.jsp" class="tm-nav-link">
+                        <img src="img/Revision.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>新增與修改</b></a></li>
+                                             
+                </ul>
+            </nav>
                         
                     <div class="tm-mb-65">
                 <a rel="nofollow" href="https://fb.com/templatemo" class="tm-social-link">
@@ -70,32 +65,26 @@
     <div class="container-fluid">
         <main class="tm-main">
             <div class="row tm-row tm-mb-45">
-                <div class="col-12">
+                <div class="col-12" style="text-align:right">
+                    
+                    您好～歡迎登入！
                     <hr class="tm-hr-primary tm-mb-55">
+                    
                 </div>
             </div>
-             <!-- 註冊帳號輸入區 -->
-            <form method="POST" style="text-align:center" action="SignUp_DBInsertInto.jsp">
-				<div><h1><b>註冊帳號</b></h1></div>
-				<br/>
-				<div><h3>單位名稱:&nbsp;
-					 <input type="text" placeholder="請輸入單位名稱..." name="creatorName" /></h3></div>
-				
-				<br/>
-				<div><h3>帳&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;號:&nbsp;
-					 <input type="text" placeholder="請輸入帳號..." name="eMail" ></h3></div>
-				
-				<br/>
-				<div><h3>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;碼:&nbsp;
-					 <input type="password" placeholder="請輸入密碼..." name="creatorPwd" ></h3></div>
-				
-				<br/>
-				<div>
-				    <h3><input type="reset" id="send" value="清除" />&nbsp;&nbsp;
-				    	<input type="submit" id="send" value="送出" />			
-				    </h3>
-				</div> 
-			</form>
+            
+            <table style="width:100%" >
+			  <tr>
+			    <th>活動編號</th>
+			    <th>活動名稱</th> 
+			    <th>活動日期</th>
+			    <th>活動地點</th>
+			    <th>名額限制</th>
+			    <th>已入取名額</th>
+			    <th>活動狀態</th>
+			    <th>簽核</th>
+			  </tr>
+			</table>
             
             
     <!--尾巴灰線條-->

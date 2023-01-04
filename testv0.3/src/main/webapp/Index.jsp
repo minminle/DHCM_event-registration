@@ -6,7 +6,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-	<title>活動報名平台-首頁</title>
+	<title>活動報名平台-首頁(活動資訊)</title>
 	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css?v=<?=time()?"> <!-- https://fontawesome.com/ -->
 	<link rel="stylesheet" type="text/css" href="css/templatemo-xtra-blog.css?v=<?=time()?">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css?v=<?=time()?">
