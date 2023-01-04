@@ -74,8 +74,36 @@
 					%>
                     
                     <hr class="tm-hr-primary tm-mb-55">                    
+<<<<<<< HEAD:testv0.3/src/main/webapp/UnitInfo.jsp
+                 <form method="POST" style="text-align:center" action="SignUp_DBInsertInto.jsp">
+				<div> 
+				<input type="submit" value="插入圖片" style="image:" HEIGHT="200" WIDTH="200"/>
+				<br/>
+				<br/>
+				<br/>
+				<div><h3>單位名稱:&nbsp;
+					 <input type="text" placeholder="請輸入單位名稱..." name="creatorName" /></h3></div>
+				
+				<br/>
+				<div><h3>電子郵件:&nbsp;
+					 <input type="text" placeholder="請輸入帳號..." name="eMail" ></h3></div>
+				
+				<br/>
+				<div><h3>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;碼:&nbsp;
+					 <input type="password" placeholder="請輸入密碼..." name="creatorPwd" ></h3></div>
+				
+				<br/>
+				<div>
+				    <h4>
+				   		<input type="reset" id="send" value="修改" />&nbsp;&nbsp;
+				    	<input type="submit" id="send" value="儲存" />			
+				    </h4>
+				</div> 
+			</form>
+=======
                 </div>
             </div>
+>>>>>>> e10edd584c8419ebe25f5382339d662f188b3a6d:testv0.3/src/main/webapp/UnitInformation.jsp
             
             <!--  SELECT * FROM creator WHERE eMail='"+session.getAttribute("creatorName")+"'";-->
             <%
