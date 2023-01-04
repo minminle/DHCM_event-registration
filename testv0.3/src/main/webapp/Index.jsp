@@ -122,25 +122,48 @@
                 
                 <article class="col-12 col-md-6 tm-post">
                     <hr class="tm-hr-primary">
-                    <a href="EventInformation.jsp" class="effect-lily tm-post-link tm-pt-60">
+                    <a href="EventInformation1.jsp" class="effect-lily tm-post-link tm-pt-60">
                         <div class=" tm-post-link-inner">
-                            <img src="img/img-02.jpg" alt="Image" class="img-fluid">                            
+                          <img src="img/img-02.jpg" alt="Image" class="img-fluid">                           
                         </div>
                         <span class="position-absolute tm-new-badge">New</span>
-                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">養生銀髮健康講座</h2>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">我的品質管理旅程</h2>
+                    	<%
+						session.setAttribute("creator", "健康事業管理系");
+						session.setAttribute("event", "我的品質管理旅程：學思經驗談");
+						session.setAttribute("intro", "國立台灣大學政策與管理研究所鍾國彪教授現身國北護，親自講授品質管理相關經驗，名額有限，歡迎踴躍報名！");
+						session.setAttribute("date", "112/01/09(一)");
+						session.setAttribute("place", "國北護學思樓F920教室");
+						session.setAttribute("eventstart", "18：25");
+						session.setAttribute("eventend", "20:20");
+						session.setAttribute("starttime", "即日起");
+						session.setAttribute("endtime", "112/01/09");
+						session.setAttribute("applicantlimited", "20人");
+						session.setAttribute("eventapplicant", "額滿為止");
+						%>
                     </a>                    
                     <p class="tm-pt-30">
-                        <a rel="nofollow" href="https://templatemo.com/tm-553-xtra-blog" target="_blank">Xtra Blog</a>  is a multi-purpose HTML CSS template from TemplateMo website. 
-                        Blog list, single post, about, contact pages are included. Left sidebar fixed width and content area is a fluid full-width.
+                    	<br><b>【我的品質管理旅程：學思經驗談】</b>
+                        <br>&nbsp;
+                        <br>講師：國立台灣大學政策與管理研究所教授
+                        <br>鍾國彪教授
+                        <br>&nbsp;
+                        <br>日期：112/01/09(一)18：25-20:20
+                        <br>&nbsp;
+                        <br>地點：學思樓F920教室
+                        <br>&nbsp;
+                        <br>※名額有限，歡迎踴躍報名！
+                        <!-- <a rel="nofollow" href="https://templatemo.com/tm-553-xtra-blog" target="_blank">Xtra Blog</a>  is a multi-purpose HTML CSS template from TemplateMo website. 
+                        Blog list, single post, about, contact pages are included. Left sidebar fixed width and content area is a fluid full-width. -->
                     </p>
                     <div class="d-flex justify-content-between tm-pt-45">
-                        <span class="tm-color-primary">Creative . Design . Business</span>
-                        <span class="tm-color-primary">June 16, 2020</span>
+                        <span class="tm-color-primary">學習 . 講座</span>
+                        <span class="tm-color-primary">JAN. 09, 2023</span>
                     </div>
                     <hr>
                     <div class="d-flex justify-content-between">
-                        <span>48 comments</span>
-                        <span>by Admin Sam</span>
+                        <span>16 comments</span>
+                        <span>by 健康事業管理系</span>
                     </div>
                 </article>
                 
