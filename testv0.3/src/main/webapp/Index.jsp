@@ -76,7 +76,7 @@
             <div class="row tm-row">
                 <article class="col-12 col-md-6 tm-post">
                     <hr class="tm-hr-primary">
-                    <a href="EventReview.jsp" class="effect-lily tm-post-link tm-pt-60">
+                    <a href="EventInformation.jsp" class="effect-lily tm-post-link tm-pt-60">
                         <div class="tm-post-link-inner">
                             <img src="img/img-01.jpg" alt="Image" class="img-fluid">                            
                         </div>
