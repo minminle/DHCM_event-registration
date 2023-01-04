@@ -82,11 +82,13 @@
 			 Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
 			 Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
 			 Statement smt= con.createStatement();
-            	
-            
-            
+             
+             
+             
+			 
             %>
-            
+            <label for="applicantName" style="color:#00999;text-align:right;">主辦單位</label>
+            <label for="applicantName" style="color:#00999;text-align:right;">主辦單位</label>
             
             
             
