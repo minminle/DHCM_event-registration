@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@page import="java.sql.*"%>
+<jsp:useBean id='objDBConfig' scope='application' class='hitstd.group.tool.database.DBConfig' />
 <!DOCTYPE html>
 <html>
 
@@ -70,12 +72,14 @@
                  <div class="form-group row mb-4"> 
                      <label for="creator" class="col-sm-3 col-form-label text-right tm-color-primary">主辦單位</label>
                          <div class="col-sm-9">
-                             <%
-							Object creator=session.getAttribute("creator");
-                            if(creator!=null){
-                        		out.println(creator.toString()+"<br>");
-                            	}
-                             %>
+                            <%
+							Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
+							//out.println("Con= "+con);
+							Statement smt= con.createStatement();
+							String sql = "SELECT * FROM leelab left join position on leelab.positionId=position.positionId WHERE memberId ='" +request.getParameter("memberId")+"'";
+							ResultSet rs = smt.executeQuery(sql);
+							rs.next();
+							%>
                          </div>
                  </div>
                  <div class="form-group row mb-4"> 
