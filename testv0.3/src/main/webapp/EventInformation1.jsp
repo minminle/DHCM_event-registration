@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@page import="java.sql.*"%>
+<jsp:useBean id='objDBConfig' scope='application' class='hitstd.group.tool.database.DBConfig' />
 <!DOCTYPE html>
 <html>
 
@@ -29,10 +31,10 @@
             <nav class="tm-nav" id="tm-nav">            
                 <ul>
                     <li class="tm-nav-item"><a href="Index.jsp" class="tm-nav-link">
-                        <img src="img/Home.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動資訊</b></a></li>		<!-- 原網頁Blog Home -->
+                        <img src="img/Home.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>首頁</b></a></li>		<!-- 原網頁Blog Home -->
                         												    <!-- 「&nbsp;」代表空白 -->
                     <li class="tm-nav-item"><a href="EventPublished.jsp" class="tm-nav-link">
-                        <img src="img/Published_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>我要辦活動</b></a></li>	<!-- 原網頁Single Post -->
+                        <img src="img/Published_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動刊登</b></a></li>	<!-- 原網頁Single Post -->
                         
                 </ul>
             </nav>
@@ -66,17 +68,18 @@
                     <hr class="tm-hr-primary tm-mb-55">
                 </div>
             </div>
-            
             <div class="col-lg-7 tm-contact-left" style="float:left;">                  
                  <div class="form-group row mb-4"> 
                      <label for="creator" class="col-sm-3 col-form-label text-right tm-color-primary">主辦單位</label>
                          <div class="col-sm-9">
-                             <%
-							Object creator=session.getAttribute("creator");
-                            if(creator!=null){
-                        		out.println(creator.toString()+"<br>");
-                            	}
-                             %>
+                            <%
+							Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
+							//out.println("Con= "+con);
+							Statement smt= con.createStatement();
+							String sql = "SELECT * FROM leelab left join position on leelab.positionId=position.positionId WHERE memberId ='" +request.getParameter("memberId")+"'";
+							ResultSet rs = smt.executeQuery(sql);
+							rs.next();
+							%>
                          </div>
                  </div>
                  <div class="form-group row mb-4"> 
@@ -159,7 +162,7 @@
                          	</div>
                       <label for="sr" style="color:#009999;text-align:right;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;結束報名</label>
                          	<div style="text-align:right;">
-                             &nbsp;&nbsp;
+                             &nbsp;
                              <%
 							Object endtime=session.getAttribute("endtime");
                             if(creator!=null){

@@ -1,6 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<%@page contentType="text/html"%>
+<%@page pageEncoding="UTF-8"%>
+<%@page import="java.sql.*"%>
+<jsp:useBean id='objDBConfig' scope='application' class='hitstd.group.tool.database.DBConfig' />
 <html>
 
 <head>
@@ -29,7 +30,7 @@
             <nav class="tm-nav" id="tm-nav">            
                 <ul>
                     <li class="tm-nav-item"><a href="UnitInformation.jsp" class="tm-nav-link">
-                        <img src="img/Introduction_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>修改資料</b></a></li>	<!-- 原網頁Single Post -->
+                        <img src="img/Introduction_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>基本資料</b></a></li>	<!-- 原網頁Single Post -->
                         
                     <li class="tm-nav-item active"><a href="EventList.jsp" class="tm-nav-link">
                         <img src="img/Review_1.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動清單與審核</b></a></li>
@@ -73,17 +74,32 @@
                 </div>
             </div>
             
-            <table style="width:100%" >
+            <table style="width:100%" border="1px solid black" border-collapse="collapse">
 			  <tr>
 			    <th>活動編號</th>
 			    <th>活動名稱</th> 
 			    <th>活動日期</th>
 			    <th>活動地點</th>
-			    <th>名額限制</th>
 			    <th>已入取名額</th>
 			    <th>活動狀態</th>
 			    <th>簽核</th>
 			  </tr>
+			  
+			  <%
+			  	Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
+				Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
+				Statement smt= con.createStatement();
+				String sql = "SELECT * FROM eventInformation";
+				ResultSet rs = smt.executeQuery(sql);
+				int num=1;
+				
+				while(rs.next()){
+					out.println("<tr><td>" + rs.getString("eventID") + "</td><td>" + rs.getString("eventTitle") + "</td><td>"  + rs.getString("eventDate") + "</td><td>" + rs.getString("eventPlace")+ "</td><td>" + rs.getString("eventApplicant")+ "</td><td></td><td></td></tr>");
+					num++;
+				}
+			
+			  %>
+			  
 			</table>
             
             

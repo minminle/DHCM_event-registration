@@ -29,7 +29,7 @@
             <nav class="tm-nav" id="tm-nav">            
                 <ul>
                     <li class="tm-nav-item"><a href="UnitInformation.jsp" class="tm-nav-link">
-                        <img src="img/Introduction_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>修改資料</b></a></li>	<!-- 原網頁Single Post -->
+                        <img src="img/Introduction_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>基本資料</b></a></li>	<!-- 原網頁Single Post -->
                         
                     <li class="tm-nav-item"><a href="EventList.jsp" class="tm-nav-link">
                         <img src="img/Review_1.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動清單與審核</b></a></li>

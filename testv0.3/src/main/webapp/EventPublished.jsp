@@ -7,7 +7,6 @@ session.setAttribute("access","n"); //access="n"
 if(request.getParameter("eMail") !=null &&
 	request.getParameter("creatorPwd") !=null){
 	Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-	//Connection con=DriverManager.getConnection("jdbc:ucanaccess://C:\\Users\\s0979\\OneDrive\\文件\\GitHub\\test_11-23\\src\\main\\webapp\\member.accdb;");
 	Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
 	Statement smt= con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
 	
@@ -57,7 +56,7 @@ if(request.getParameter("eMail") !=null &&
                         <img src="img/Home.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動資訊</b></a></li>		<!-- 原網頁Blog Home -->
                         												    <!-- 「&nbsp;」代表空白 -->
                     <li class="tm-nav-item active"><a href="EventPublished.jsp" class="tm-nav-link">
-                        <img src="img/Published_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動刊登</b></a></li>	<!-- 原網頁Single Post -->
+                        <img src="img/Published_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>我要辦活動</b></a></li>	<!-- 原網頁Single Post -->
                         
                 </ul>
             </nav>
@@ -93,7 +92,7 @@ if(request.getParameter("eMail") !=null &&
             </div>
             
             <!-- 登入帳號輸入區 -->
-            <form method="POST" style="text-align:center">
+            <form method="POST" style="text-align:center" action="UnitInformation.jsp">
 				<div><h1><b>單位登入</b></h1></div>
 				<br/>
 				<div><h3>帳&nbsp;&nbsp;號:&nbsp;<input type="text" placeholder="輸入您的Gmail帳號..." name="eMail" required></h3></div>

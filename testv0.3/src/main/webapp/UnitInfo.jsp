@@ -1,6 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<%@page contentType="text/html"%>
+<%@page pageEncoding="UTF-8"%>
+<%@page import="java.sql.*"%>
+<jsp:useBean id='objDBConfig' scope='application' class='hitstd.group.tool.database.DBConfig' />
 <html>
 
 <head>
@@ -66,10 +67,14 @@
         <main class="tm-main">
             <div class="row tm-row tm-mb-45">
                 <div class="col-12" style="text-align:right">
-                    
-                    您好～歡迎登入！<br>
+                    <%
+					 String strName;
+					 strName = request.getParameter("eMail");
+					 out.println(strName +"您好～歡迎登入！");
+					%>
                     
                     <hr class="tm-hr-primary tm-mb-55">                    
+<<<<<<< HEAD:testv0.3/src/main/webapp/UnitInfo.jsp
                  <form method="POST" style="text-align:center" action="SignUp_DBInsertInto.jsp">
 				<div> 
 				<input type="submit" value="插入圖片" style="image:" HEIGHT="200" WIDTH="200"/>
@@ -95,10 +100,26 @@
 				    </h4>
 				</div> 
 			</form>
+=======
+                </div>
+            </div>
+>>>>>>> e10edd584c8419ebe25f5382339d662f188b3a6d:testv0.3/src/main/webapp/UnitInformation.jsp
             
-            
-            
-            
+            <!--  SELECT * FROM creator WHERE eMail='"+session.getAttribute("creatorName")+"'";-->
+            <%
+			 Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
+			 Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
+			 Statement smt= con.createStatement();
+             
+             
+             
+			 
+            %>
+            <label for="applicantName" style="color:#00999;text-align:right;">主辦單位</label>
+            <label for="applicantName" style="color:#00999;text-align:right;">活動名稱</label>
+            <input type="radio" name="view" value="rabbit" checked>志工服務<br>
+            <input type="radio" name="view" value="rabbit" checked>講座<br>
+            <input type="radio" name="view" value="rabbit" checked>志工服務<br>
             
             
             

@@ -76,7 +76,7 @@
             <div class="row tm-row">
                 <article class="col-12 col-md-6 tm-post">
                     <hr class="tm-hr-primary">
-                    <a href="EventReview.jsp" class="effect-lily tm-post-link tm-pt-60">
+                    <a href="EventInformation.jsp" class="effect-lily tm-post-link tm-pt-60">
                         <div class="tm-post-link-inner">
                             <img src="img/img-01.jpg" alt="Image" class="img-fluid">                            
                         </div>
@@ -119,51 +119,73 @@
                         <span>by健康科技學院</span>
                     </div>
                 </article>
+                
                 <article class="col-12 col-md-6 tm-post">
                     <hr class="tm-hr-primary">
-                    <a href="EventInformation.jsp" class="effect-lily tm-post-link tm-pt-60">
+                    <a href="EventInformation1.jsp?eventID=<%=rs.getString("eventID")%>" class="effect-lily tm-post-link tm-pt-60">
                         <div class=" tm-post-link-inner">
-                            <img src="img/img-02.jpg" alt="Image" class="img-fluid">                            
+                          <img src="/img/img-02.jpg" alt="Image" class="img-fluid">                           
                         </div>
                         <span class="position-absolute tm-new-badge">New</span>
-                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">養生銀髮健康講座</h2>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">講座-我的品質管理旅程</h2>
                     </a>                    
                     <p class="tm-pt-30">
-                        <a rel="nofollow" href="https://templatemo.com/tm-553-xtra-blog" target="_blank">Xtra Blog</a>  is a multi-purpose HTML CSS template from TemplateMo website. 
-                        Blog list, single post, about, contact pages are included. Left sidebar fixed width and content area is a fluid full-width.
+                    	<br><b>【我的品質管理旅程：學思經驗談】</b>
+                        <br>&nbsp;
+                        <br>講師：國立台灣大學政策與管理研究所教授
+                        <br>鍾國彪教授
+                        <br>&nbsp;
+                        <br>日期：112/01/09(一)18：25-20:20
+                        <br>&nbsp;
+                        <br>地點：學思樓F920教室
+                        <br>&nbsp;
+                        <br>※名額有限，歡迎踴躍報名！
                     </p>
                     <div class="d-flex justify-content-between tm-pt-45">
-                        <span class="tm-color-primary">Creative . Design . Business</span>
-                        <span class="tm-color-primary">June 16, 2020</span>
+                        <span class="tm-color-primary">學習 . 講座</span>
+                        <span class="tm-color-primary">JAN. 09, 2023</span>
                     </div>
                     <hr>
                     <div class="d-flex justify-content-between">
-                        <span>48 comments</span>
-                        <span>by Admin Sam</span>
+                        <span>16 comments</span>
+                        <span>by 健康事業管理系</span>
                     </div>
                 </article>
+                
                 <article class="col-12 col-md-6 tm-post">
                     <hr class="tm-hr-primary">
-                    <a href="EventInformation.jsp" class="effect-lily tm-post-link tm-pt-20">
+                    <a href="EventInformation2.jsp" class="effect-lily tm-post-link tm-pt-20">
                         <div class="tm-post-link-inner">
                             <img src="img/img-03.jpg" alt="Image" class="img-fluid">
                         </div>
-                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">How can you apply Xtra Blog</h2>
+                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">線上-了解寵物情緒行為教養</h2>
                     </a>                    
                     <p class="tm-pt-30">
-                        You are <u>allowed</u> to convert this template as any kind of CMS theme or template for your custom website builder. 
-                        You can also use this for your clients. Thank you for choosing us.
+                    	<br><b>其實毛小孩也會說話，
+                    	<br>從汪星人的角度了解情緒行為教養！</b>
+                        <br>&nbsp;
+                        用毛孩的角度了解他們的情緒、行為進而教養！
+						讓你輕鬆學、快快樂樂與汪星人和平共處! 
+						<br>&nbsp;
+                        <br>※特別提醒：
+                        <br>這堂課<b><u>不是</u>寵物溝通</b>課程；<b>不針對貓主子</b>
+                        <br>&nbsp;
+                        <br>主講人：寵之幸實業有限公司-總經理
+                        <br>&nbsp;
+                        <br>講師：國立台灣大學政策與管理研究所教授
+                        <br>更多詳情<a rel="nofollow" href="https://www.facebook.com/five5plus" target="_blank">寵之幸 Five5.Plus</a>瀏覽！
                     </p>
                     <div class="d-flex justify-content-between tm-pt-45">
-                        <span class="tm-color-primary">Music . Audio</span>
-                        <span class="tm-color-primary">June 11, 2020</span>
+                        <span class="tm-color-primary">學習 . 線上 . 寵物</span>
+                        <span class="tm-color-primary">JAN. 10, 2023</span>
                     </div>
                     <hr>
                     <div class="d-flex justify-content-between">
                         <span>24 comments</span>
-                        <span>by John Walker</span>
+                        <span>by 寵之幸 Five5.Plus</span>
                     </div>
                 </article>
+                
                 <article class="col-12 col-md-6 tm-post">
                     <hr class="tm-hr-primary">
                     <a href="EventInformation.jsp" class="effect-lily tm-post-link tm-pt-20">
@@ -187,6 +209,7 @@
                     </div>
                 </article>
             </div>
+            
             <div class="row tm-row tm-mt-100 tm-mb-75">
                 <div class="tm-prev-next-wrapper">
                     <a href="#" class="mb-2 tm-btn tm-btn-primary tm-prev-next disabled tm-mr-20">Prev</a>

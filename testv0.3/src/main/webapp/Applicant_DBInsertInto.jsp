@@ -1,7 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=BIG5"
-    pageEncoding="BIG5"%>
-<!DOCTYPE html>
-<jsp:useBean id='objDBConfig' scope='application' class='histd.group.tool.database.DBConfig' />
+<%@page contentType="text/html"%>
+<%@page pageEncoding="BIG5"%>
+<%@page import="java.sql.*"%>
+<jsp:useBean id='objDBConfig' scope='application' class='hitstd.group.tool.database.DBConfig' />
 <html>
 <head>
 </head>
@@ -14,7 +14,7 @@
 	String applicantphone = new String(request.getParameter("phone"));	
 	String applicantName  = new String(request.getParameter("applicantName"));
 	String applicanteMail = new String(request.getParameter("eMail"));
-	smt.execute("INSERT INTO applicant (applicantID, applicantName, phone, eMail) VALUES('"+applicantID+"','"+applicantName+"','"+applicantphone+"','"+applicanteMail+"')");
+	smt.execute("INSERT INTO applicant (applicantID, applicantName, phone, eMail) VALUES(N'"+applicantID+"',N'"+applicantName+"',N'"+applicantphone+"','"+applicanteMail+"')");
 	con.close();
 	response.sendRedirect("Index.jsp");
 	%>
