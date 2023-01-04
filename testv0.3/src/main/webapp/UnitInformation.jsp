@@ -87,12 +87,25 @@
              
 			 
             %>
-            <label for="applicantName" style="color:#00999;text-align:right;">主辦單位</label>
-            <label for="applicantName" style="color:#00999;text-align:right;">活動名稱</label>
-            <input type="radio" name="view" value="rabbit" checked>志工服務<br>
-            <input type="radio" name="view" value="rabbit" checked>講座<br>
-            <input type="radio" name="view" value="rabbit" checked>志工服務<br>
+            <form method="POST">
+            <label for="" style="color:#00999;text-align:right;">主辦單位</label><br>
             
+            <label for="eventTitle" style="color:#00999;text-align:right;">活動名稱</label><br>
+            
+            <label for="eventType" style="color:#00999;text-align:right;">類別</label><br>
+	            <input type="radio" name="view" value="volunteer" checked>志工服務&nbsp;&nbsp;
+	            <input type="radio" name="view" value="lecture" checked>講座&nbsp;&nbsp;
+	            <input type="radio" name="view" value="rabbit" checked>志工服務<br>
+            
+            <label for="eventIntro" style="color:#00999;text-align:right;">活動簡介</label><br>
+            
+            <label for="eventDate" style="color:#00999;text-align:right;">活動簡介</label><br>
+            
+            <label for="eventPlace" style="color:#00999;text-align:right;">活動簡介</label><br>
+            
+            <label for="eventStart" style="color:#00999;text-align:right;">活動簡介</label><br>
+            <label for="eventEnd" style="color:#00999;text-align:right;">活動簡介</label><br>
+            </form>
             
             
             <!--尾巴邊邊線條-->
