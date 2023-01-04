@@ -1,6 +1,7 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html>
+<%@page contentType="text/html"%>
+<%@page pageEncoding="UTF-8"%>
+<%@page import="java.sql.*"%>
+<jsp:useBean id='objDBConfig' scope='application' class='hitstd.group.tool.database.DBConfig' />
 <html>
 
 <head>
@@ -29,7 +30,7 @@
             <nav class="tm-nav" id="tm-nav">            
                 <ul>
                     <li class="tm-nav-item active"><a href="UnitInformation.jsp" class="tm-nav-link">
-                        <img src="img/Introduction_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>修改資料</b></a></li>
+                        <img src="img/Introduction_2.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>基本資料</b></a></li>
                         
                     <li class="tm-nav-item"><a href="EventList.jsp" class="tm-nav-link">
                         <img src="img/Review_1.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動清單與審核</b></a></li>
@@ -66,15 +67,25 @@
         <main class="tm-main">
             <div class="row tm-row tm-mb-45">
                 <div class="col-12" style="text-align:right">
-                    
-                    您好～歡迎登入！<br>
+                    <%
+					 String strName;
+					 strName = request.getParameter("eMail");
+					 out.println(strName +"您好～歡迎登入！");
+					%>
                     
                     <hr class="tm-hr-primary tm-mb-55">                    
                 </div>
-                
             </div>
             
+            <!--  SELECT * FROM creator WHERE eMail='"+session.getAttribute("creatorName")+"'";-->
+            <%
+			 Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
+			 Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
+			 Statement smt= con.createStatement();
+            	
             
+            
+            %>
             
             
             

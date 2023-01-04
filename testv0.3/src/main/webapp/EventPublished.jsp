@@ -93,7 +93,7 @@ if(request.getParameter("eMail") !=null &&
             </div>
             
             <!-- 登入帳號輸入區 -->
-            <form method="POST" style="text-align:center">
+            <form method="POST" style="text-align:center" action="UnitInformation.jsp">
 				<div><h1><b>單位登入</b></h1></div>
 				<br/>
 				<div><h3>帳&nbsp;&nbsp;號:&nbsp;<input type="text" placeholder="輸入您的Gmail帳號..." name="eMail" required></h3></div>
