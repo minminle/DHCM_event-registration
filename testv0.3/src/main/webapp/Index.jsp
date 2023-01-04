@@ -99,6 +99,7 @@
                         <span>by ntunhs dhcm</span>
                     </div>
                 </article>
+                
                 <article class="col-12 col-md-6 tm-post">
                     <hr class="tm-hr-primary">
                     <a href="EventInformation.jsp" class="effect-lily tm-post-link tm-pt-60">
@@ -122,6 +123,7 @@
                         <span>by Admin Sam</span>
                     </div>
                 </article>
+                
                 <article class="col-12 col-md-6 tm-post">
                     <hr class="tm-hr-primary">
                     <a href="EventInformation.jsp" class="effect-lily tm-post-link tm-pt-20">
@@ -144,6 +146,7 @@
                         <span>by John Walker</span>
                     </div>
                 </article>
+                
                 <article class="col-12 col-md-6 tm-post">
                     <hr class="tm-hr-primary">
                     <a href="EventInformation.jsp" class="effect-lily tm-post-link tm-pt-20">
@@ -167,6 +170,7 @@
                     </div>
                 </article>
             </div>
+            
             <div class="row tm-row tm-mt-100 tm-mb-75">
                 <div class="tm-prev-next-wrapper">
                     <a href="#" class="mb-2 tm-btn tm-btn-primary tm-prev-next disabled tm-mr-20">Prev</a>
