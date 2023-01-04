@@ -14,7 +14,7 @@
 	String applicantphone = new String(request.getParameter("phone"));	
 	String applicantName  = new String(request.getParameter("applicantName"));
 	String applicanteMail = new String(request.getParameter("eMail"));
-	smt.execute("INSERT INTO applicant (applicantID, applicantName, phone, eMail) VALUES('"+applicantID+"','"+applicantName+"','"+applicantphone+"','"+applicanteMail+"')");
+	smt.execute("INSERT INTO applicant (applicantID, applicantName, phone, eMail) VALUES(N'"+applicantID+"',N'"+applicantName+"',N'"+applicantphone+"','"+applicanteMail+"')");
 	con.close();
 	response.sendRedirect("Index.jsp");
 	%>
