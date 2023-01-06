@@ -76,7 +76,7 @@
 							Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
 							//out.println("Con= "+con);
 							Statement smt= con.createStatement();
-							String sql = "SELECT * FROM leelab left join position on leelab.positionId=position.positionId WHERE memberId ='" +request.getParameter("memberId")+"'";
+							String sql = "SELECT * FROM leelab left join position on leelab.positionId=EventInformation.eventId WHERE eventId ='" +request.getParameter("memberId")+"'";
 							ResultSet rs = smt.executeQuery(sql);
 							rs.next();
 							%>
