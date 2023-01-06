@@ -74,21 +74,66 @@
 					%>
                     
                     <hr class="tm-hr-primary tm-mb-55">                    
+<<<<<<< HEAD:testv0.3/src/main/webapp/UnitInfo.jsp
+                 <form method="POST" style="text-align:center" action="SignUp_DBInsertInto.jsp">
+				<div> 
+				<input type="submit" value="插入圖片" style="image:" HEIGHT="200" WIDTH="200"/>
+				<br/>
+				<br/>
+				<br/>
+				<div><h3>單位名稱:&nbsp;
+					 <input type="text" placeholder="請輸入單位名稱..." name="creatorName" /></h3></div>
+				
+				<br/>
+				<div><h3>電子郵件:&nbsp;
+					 <input type="text" placeholder="請輸入帳號..." name="eMail" ></h3></div>
+				
+				<br/>
+				<div><h3>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;碼:&nbsp;
+					 <input type="password" placeholder="請輸入密碼..." name="creatorPwd" ></h3></div>
+				
+				<br/>
+				<div>
+				    <h4>
+				   		<input type="reset" id="send" value="修改" />&nbsp;&nbsp;
+				    	<input type="submit" id="send" value="儲存" />			
+				    </h4>
+				</div> 
+			</form>
+=======
                 </div>
             </div>
+>>>>>>> e10edd584c8419ebe25f5382339d662f188b3a6d:testv0.3/src/main/webapp/UnitInformation.jsp
             
             <!--  SELECT * FROM creator WHERE eMail='"+session.getAttribute("creatorName")+"'";-->
             <%
 			 Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
 			 Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
 			 Statement smt= con.createStatement();
-            	
-            
-            
+             
+             
+             
+			 
             %>
+            <form method="POST">
+            <label for="" style="color:#00999;text-align:right;">主辦單位</label><br>
             
+            <label for="eventTitle" style="color:#00999;text-align:right;">活動名稱</label><br>
             
+            <label for="eventType" style="color:#00999;text-align:right;">類別</label><br>
+	            <input type="radio" name="view" value="volunteer" checked>志工服務&nbsp;&nbsp;
+	            <input type="radio" name="view" value="lecture" checked>講座&nbsp;&nbsp;
+	            <input type="radio" name="view" value="rabbit" checked>志工服務<br>
             
+            <label for="eventIntro" style="color:#00999;text-align:right;">活動簡介</label><br>
+            
+            <label for="eventDate" style="color:#00999;text-align:right;">活動簡介</label><br>
+            
+            <label for="eventPlace" style="color:#00999;text-align:right;">活動簡介</label><br>
+            
+            <label for="eventStart" style="color:#00999;text-align:right;">活動簡介</label><br>
+            <label for="eventEnd" style="color:#00999;text-align:right;">活動簡介</label><br>
+            </form>
             
             
             <!--尾巴邊邊線條-->

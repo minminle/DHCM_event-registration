@@ -7,7 +7,6 @@ session.setAttribute("access","n"); //access="n"
 if(request.getParameter("eMail") !=null &&
 	request.getParameter("creatorPwd") !=null){
 	Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-	//Connection con=DriverManager.getConnection("jdbc:ucanaccess://C:\\Users\\s0979\\OneDrive\\文件\\GitHub\\test_11-23\\src\\main\\webapp\\member.accdb;");
 	Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
 	Statement smt= con.createStatement(ResultSet.TYPE_SCROLL_INSENSITIVE,ResultSet.CONCUR_READ_ONLY);
 	
