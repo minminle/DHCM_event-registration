@@ -39,7 +39,7 @@
 			  background-color: #c1cddd;
 			  color: block;
 			}
-			}			
+									
 		</style>
 	</head>
 	
@@ -54,6 +54,7 @@
 		ResultSet rs = smt.executeQuery(sql);
 		rs.next();
 	%>
+	
 	<div class="container-fluid">
         <main class="tm-main">
             	<div class="col-12" style="text-align:right">
@@ -64,8 +65,8 @@
 			
 		    <form action="UnitInfoEdit.jsp" method="post">
 		    	<div class="col-sm-9"><h4>
-		    		<label for="creatorName" class="col-sm-3 col-form-label tm-color-primary">單位Logo</label></h4>
-		    		<img src="<%=rs.getString("creatorPic") %>" alt="">
+		    		<label for="creatorPic" class="col-sm-3 col-form-label tm-color-primary">單位Logo</label>
+		    		<img src="<%=rs.getString("creatorPic") %>" alt="單位Logo" width="40%" ></h4>
 		    	</div>
 		    	
 		    	<div class="col-sm-9"><h4>
@@ -92,8 +93,9 @@
 		    		<label for="contactPhone" class="col-sm-3 col-form-label tm-color-primary">聯絡電話</label>
 		    		<%=rs.getString("contactPhone") %></h4>
 		    	</div>
+		    	
 		    	<div style="text-align:center">
-		    	<button class="button button1" type="submit" name="edit">編輯</button>
+		    		<button class="button button1" type="submit" name="edit">編輯</button>
 		    	</div>
 		    </form>       
             
