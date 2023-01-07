@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@page import="java.sql.*"%>
+<jsp:useBean id='objDBConfig' scope='application' class='hitstd.group.tool.database.DBConfig' />
 <!DOCTYPE html>
 <html>
 
@@ -58,7 +60,14 @@
             </p>
         </div>
     </header>
-    
+    <%	
+	String evemtID=request.getParameter("ID");
+    Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
+	Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
+	Statement smt= con.createStatement();
+	String sql = "SELECT *  FROM eventInformation WHERE eventInformation.ID='"+ID+"'";
+	ResultSet rs = smt.executeQuery(sql);
+	%>
     <div class="container-fluid">
         <main class="tm-main">
             <!-- 搜尋欄 -->
@@ -119,16 +128,21 @@
                         <span>by健康科技學院</span>
                     </div>
                 </article>
-                
+                <%
+                while(rs.next()){
+                %>
                 <article class="col-12 col-md-6 tm-post">
                     <hr class="tm-hr-primary">
-                    <a href="EventInformation1.jsp?eventID=<%=rs.getString("eventID")%>" class="effect-lily tm-post-link tm-pt-60">
+                    <a href="EventInformation1.jsp?ID=<%=rs.getString("ID")%>" class="effect-lily tm-post-link tm-pt-60">
                         <div class=" tm-post-link-inner">
                           <img src="/img/img-02.jpg" alt="Image" class="img-fluid">                           
                         </div>
                         <span class="position-absolute tm-new-badge">New</span>
                         <h2 class="tm-pt-30 tm-color-primary tm-post-title">講座-我的品質管理旅程</h2>
-                    </a>                    
+                    </a>
+                 <%}
+                con.close();
+                 %>                       
                     <p class="tm-pt-30">
                     	<br><b>【我的品質管理旅程：學思經驗談】</b>
                         <br>&nbsp;
