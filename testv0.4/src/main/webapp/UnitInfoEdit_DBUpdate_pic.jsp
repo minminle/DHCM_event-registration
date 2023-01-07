@@ -1,5 +1,4 @@
-<%@page contentType="text/html"%>
-<%@page pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import="java.sql.*"%>
 <%@page import="java.io.*,java.util.*"%>
 <%@page import="com.oreilly.servlet.MultipartRequest"%>

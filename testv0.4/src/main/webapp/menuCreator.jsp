@@ -29,16 +29,16 @@
 	                <h1 class="text-center">活動報名平台</h1>
 	            </div>
 	            
-	            <!-- 活動資訊、我要辦活動網頁超連結 -->
+	            <!-- 基本資料、活動清單與審核、新增與修改網頁超連結 -->
 	            <nav class="tm-nav" id="tm-nav">            
 	                <ul>
 	                    <li class="tm-nav-item active"><a href="UnitInfo.jsp" class="tm-nav-link">
                         <img src="img/Introduction_1.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>基本資料</b></a></li>
 	                    
-	                    <li class="tm-nav-item @@contact__active"><a href="CreatorLogin.jsp" class="tm-nav-link">
+	                    <li class="tm-nav-item @@contact__active"><a href="CheckList.jsp" class="tm-nav-link">
                         <img src="img/Check.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>活動清單與審核</b></a></li>
                         
-                        <li class="tm-nav-item @@contact__active"><a href="CreatorLogin.jsp" class="tm-nav-link">
+                        <li class="tm-nav-item @@contact__active"><a href="EventMod.jsp" class="tm-nav-link">
                         <img src="img/Revision.png" alt="Home" width="28" height="28">&nbsp;&nbsp;<b>新增與修改</b></a></li>
 						
 					</ul>
