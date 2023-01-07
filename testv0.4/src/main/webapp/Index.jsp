@@ -227,7 +227,7 @@
 	            <footer class="row tm-row">
 	                <hr class="col-12">
 	                <div class="col-md-6 col-12 tm-color-gray">
-	                    Design by: 李、孫、楊
+	                    Design by: 李嘉珉、孫合佳、楊宜蓁
 	                </div>
 	                <div class="col-md-6 col-12 tm-color-gray tm-copyright">
 	                    2023

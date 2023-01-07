@@ -3,7 +3,7 @@
 <%@include file ="menuCreator.jsp" %>
 <%@page import="java.sql.*"%>
 <jsp:useBean id='objDBConfig' scope='application' class='hitstd.group.tool.database.DBConfig' />
-<!DOCTYPE html>
+
 <html>
 	<head>
 		<meta charset="UTF-8">
@@ -13,6 +13,34 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"> <!-- https://fonts.google.com/ -->
 	    <link rel="stylesheet" href="css/bootstrap.min.css">
 	    <link rel="stylesheet" href="css/templatemo-xtra-blog.css">
+	    <style>
+			.button {
+			  border: none;
+			  color: white;
+			  padding: 5px 15px;
+			  height: 50px;
+  			  border-radius: 20px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 20px;
+			  margin: 4px 2px;
+			  transition-duration: 0.4s;
+			  cursor: pointer;
+			}
+			
+			.button1 {
+			  background-color: white; 
+			  color: black; 
+			  border: 2px solid #a2c2c9;
+			}
+			
+			.button1:hover {
+			  background-color: #c1cddd;
+			  color: block;
+			}
+			}			
+		</style>
 	</head>
 	
 	<body>
@@ -35,6 +63,11 @@
             
 			
 		    <form action="UnitInfoEdit.jsp" method="post">
+		    	<div class="col-sm-9"><h4>
+		    		<label for="creatorName" class="col-sm-3 col-form-label tm-color-primary">單位Logo</label></h4>
+		    		<img src="<%=rs.getString("creatorPic") %>" alt="">
+		    	</div>
+		    	
 		    	<div class="col-sm-9"><h4>
 		    		<label for="creatorName" class="col-sm-3 col-form-label tm-color-primary">單位名稱</label>
 		    		<%=rs.getString("creatorName") %></h4>
@@ -59,6 +92,9 @@
 		    		<label for="contactPhone" class="col-sm-3 col-form-label tm-color-primary">聯絡電話</label>
 		    		<%=rs.getString("contactPhone") %></h4>
 		    	</div>
+		    	<div style="text-align:center">
+		    	<button class="button button1" type="submit" name="edit">編輯</button>
+		    	</div>
 		    </form>       
             
             
@@ -67,7 +103,7 @@
 	            <footer class="row tm-row">
 	                <hr class="col-12">
 	                <div class="col-md-6 col-12 tm-color-gray">
-	                    Design by: 李、孫、楊
+	                    Design by: 李嘉珉、孫合佳、楊宜蓁
 	                </div>
 	                
 	                <div class="col-md-6 col-12 tm-color-gray tm-copyright">
