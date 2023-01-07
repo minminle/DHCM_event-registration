@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@include file = "menu.jsp" %>
-<!DOCTYPE html>
+<%@page import="java.sql.*"%>
+<jsp:useBean id='objDBConfig' scope='application' class='hitstd.group.tool.database.DBConfig' />
 <html>
 	<head>
 		<meta charset="UTF-8">
@@ -14,7 +15,16 @@
 	</head>
 	
 	<body>
-	
+	<%request.setCharacterEncoding("UTF-8"); %>
+	<%
+		Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
+		Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
+		//out.println("Con= "+con);
+		Statement smt= con.createStatement();
+		String sql = "SELECT * FROM eventInformation left join creator on eventInformation.host=creator.creatorNum WHERE creatorEmail ='" +request.getParameter("creatorEmail")+"'";
+		ResultSet rs = smt.executeQuery(sql);
+		rs.next();
+	%>
 	    
 	    <div class="container-fluid">
 	        <main class="tm-main">
