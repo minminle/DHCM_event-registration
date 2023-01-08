@@ -13,7 +13,10 @@ if(request.getParameter("creatorEmail") !=null &&
 			request.getParameter("creatorPwd")+"'";
 	ResultSet members = smt.executeQuery(getMemberData);
 	if(members.next()){
-		session.setAttribute("accessId",request.getParameter("creatorEmail"));
+		session.setAttribute("access","y");
+		session.setAttribute("accessId",members.getString("creatorEmail"));
+		session.setAttribute("accessName",members.getString("contactPerson"));
+	
 		//session.setMaxInactiveInterval(20); 自動登出
 		response.sendRedirect("UnitInfo.jsp");
 	}else

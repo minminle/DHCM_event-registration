@@ -48,10 +48,9 @@
 		Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
 		Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
 		Statement smt= con.createStatement();
-		String sql = "SELECT * FROM creator left join position on creator.creatorNum=eventInformation.host WHERE creatorEmail ='" +request.getParameter("creatorEmail")+"'";
+		String sql = "SELECT * FROM creator left join eventInformation on creator.creatorNum=eventInformation.host WHERE creatorEmail ='" +request.getParameter("creatorEmail")+"'";
 		String option="SELECT * FROM eventInformation";
 		ResultSet rs = smt.executeQuery(sql);
-		ResultSet rs2 = smt.executeQuery(option);
 		rs.next();
 		%>
 		<div class="container-fluid">

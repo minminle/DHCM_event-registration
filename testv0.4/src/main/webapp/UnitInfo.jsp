@@ -58,15 +58,15 @@
 	<div class="container-fluid">
         <main class="tm-main">
             	<div class="col-12" style="text-align:right">
-                	<b><%=rs.getString("contactPerson") %></b>&nbsp;&nbsp;您好!歡迎登入～ 
-                </div>
+                	<b><%out.println("("+session.getAttribute("accessName")+")");%></b>&nbsp;&nbsp;您好!歡迎登入～ 
+                	               </div>
             	<hr class="tm-hr-primary tm-mb-55">
             
 			
 		    <form action="UnitInfoEdit.jsp" method="post">
 		    	<div class="col-sm-9"><h4>
 		    		<label for="creatorPic" class="col-sm-3 col-form-label tm-color-primary">單位Logo</label>
-		    		<img src="<%=rs.getString("creatorPic") %>" alt="單位Logo" width="40%" ></h4>
+		    		<img src="<%=rs.getString("creatorPic") %>" alt="單位Logo" width="40%" ></h4>	    		
 		    	</div>
 		    	
 		    	<div class="col-sm-9"><h4>

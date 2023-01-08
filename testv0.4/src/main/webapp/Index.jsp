@@ -16,14 +16,14 @@
 	
 	<body>
 	<%request.setCharacterEncoding("UTF-8"); %>
-	<%
+	
+	<%	
 		Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
 		Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
-		//out.println("Con= "+con);
 		Statement smt= con.createStatement();
-		String sql = "SELECT * FROM eventInformation left join creator on eventInformation.host=creator.creatorNum WHERE creatorEmail ='" +request.getParameter("creatorEmail")+"'";
+		String sql = "SELECT * FROM eventInformation";
 		ResultSet rs = smt.executeQuery(sql);
-		rs.next();
+		String id = request.getParameter("eventNum");
 	%>
 	    
 	    <div class="container-fluid">
