@@ -43,169 +43,43 @@
 	            </div>
 	                       
 	            <div class="row tm-row">
-	            	<!-- 第一資訊 -->
-	                <article class="col-12 col-md-6 tm-post">
-	                    <hr class="tm-hr-primary">
-	                    <a href="EventDetail.jsp" class="effect-lily tm-post-link tm-pt-60">
-	                        <div class="tm-post-link-inner">
-	                            <img src="img/img-01.jpg" alt="Image" class="img-fluid">                            
-	                        </div>
-	                        <span class="position-absolute tm-new-badge">New</span>
-	                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">活動名稱</h2>
-	                    </a> 
-	                                       
-	                    <p class="tm-pt-30">
-	                        活動介紹
-	                    </p>
-	                    
-	                    <div class="d-flex justify-content-between tm-pt-45">
-	                        <span class="tm-color-primary">活動類型</span>
-	                        <span class="tm-color-primary">活動日期</span>
-	                    </div>
-	                    
-	                    <hr>
-	                    <div class="d-flex justify-content-between">
-	                        <span>點擊率(?)</span>
-	                        <span>刊登者</span>
-	                    </div>
-	                </article>
+	            	<!-- 資訊欄 --> 
+	            	<!--  <article class="col-12 col-md-6 tm-post" > -->
+	                	<form action="EventDetail.jsp" >
+	                		<% int num=1;
+					          while(rs.next()){
+					        %>
+		                    <hr class="tm-hr-primary">
+		                    
+		                    <a href="EventDetail.jsp?eventNum=<%=rs.getString("eventNum")%>" class="effect-lily tm-post-link tm-pt-60">
+		                        <div class="tm-post-link-inner">
+		                            <img src="<%=rs.getString("eventPic")%>" alt=""  class="img-fluid">                            
+		                        </div>
+		                        <span class="position-absolute tm-new-badge">New</span>
+		                        <h2 class="tm-pt-30 tm-color-primary tm-post-title"><%=rs.getString("eventTitle")%></h2>
+		                    </a> 
+		                                       
+		                    <p class="tm-pt-30">
+		                        <%=rs.getString("eventIntro")%>
+		                    </p>
+		                    
+		                    <div class="d-flex justify-content-between tm-pt-45">
+		                        <span class="tm-color-primary"><%=rs.getString("eventDate")%></span>
+		                        <span class="tm-color-primary"><%=rs.getString("eventPlace")%></span>
+		                    </div>
+		                    
+		                    <hr>
+		                    <div class="d-flex justify-content-between">
+		                        <span><%=rs.getString("eventType")%></span>
+		                        <span><%=rs.getString("host")%></span>
+		                    </div>
+		                		<% num++;
+	        						}%>
+        				</form>
 	                
-	                <!-- 第二資訊 -->
-	                <article class="col-12 col-md-6 tm-post">
-	                    <hr class="tm-hr-primary">
-	                    <a href="EventDetail.jsp" class="effect-lily tm-post-link tm-pt-60">
-	                        <div class="tm-post-link-inner">
-	                            <img src="img/img-01.jpg" alt="Image" class="img-fluid">                            
-	                        </div>
-	                        <span class="position-absolute tm-new-badge">New</span>
-	                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">活動名稱</h2>
-	                    </a> 
-	                                       
-	                    <p class="tm-pt-30">
-	                        活動介紹
-	                    </p>
-	                    
-	                    <div class="d-flex justify-content-between tm-pt-45">
-	                        <span class="tm-color-primary">活動類型</span>
-	                        <span class="tm-color-primary">活動日期</span>
-	                    </div>
-	                    
-	                    <hr>
-	                    <div class="d-flex justify-content-between">
-	                        <span>點擊率(?)</span>
-	                        <span>刊登者</span>
-	                    </div>
-	                </article>
+	                </div>
 	                
-	                <!-- 第三資訊 -->
-	                <article class="col-12 col-md-6 tm-post">
-	                    <hr class="tm-hr-primary">
-	                    <a href="EventDetail.jsp" class="effect-lily tm-post-link tm-pt-60">
-	                        <div class="tm-post-link-inner">
-	                            <img src="img/img-01.jpg" alt="Image" class="img-fluid">                            
-	                        </div>
-	                        <span class="position-absolute tm-new-badge">New</span>
-	                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">活動名稱</h2>
-	                    </a> 
-	                                       
-	                    <p class="tm-pt-30">
-	                        活動介紹
-	                    </p>
-	                    
-	                    <div class="d-flex justify-content-between tm-pt-45">
-	                        <span class="tm-color-primary">活動類型</span>
-	                        <span class="tm-color-primary">活動日期</span>
-	                    </div>
-	                    
-	                    <hr>
-	                    <div class="d-flex justify-content-between">
-	                        <span>點擊率(?)</span>
-	                        <span>刊登者</span>
-	                    </div>
-	                </article>
-	                
-	                <!-- 第四資訊 -->
-	                <article class="col-12 col-md-6 tm-post">
-	                    <hr class="tm-hr-primary">
-	                    <a href="EventDetail.jsp" class="effect-lily tm-post-link tm-pt-60">
-	                        <div class="tm-post-link-inner">
-	                            <img src="img/img-01.jpg" alt="Image" class="img-fluid">                            
-	                        </div>
-	                        <span class="position-absolute tm-new-badge">New</span>
-	                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">活動名稱</h2>
-	                    </a> 
-	                                       
-	                    <p class="tm-pt-30">
-	                        活動介紹
-	                    </p>
-	                    
-	                    <div class="d-flex justify-content-between tm-pt-45">
-	                        <span class="tm-color-primary">活動類型</span>
-	                        <span class="tm-color-primary">活動日期</span>
-	                    </div>
-	                    
-	                    <hr>
-	                    <div class="d-flex justify-content-between">
-	                        <span>點擊率(?)</span>
-	                        <span>刊登者</span>
-	                    </div>
-	                </article>
-	                
-	                <!-- 第五資訊 -->
-	                <article class="col-12 col-md-6 tm-post">
-	                    <hr class="tm-hr-primary">
-	                    <a href="EventDetail.jsp" class="effect-lily tm-post-link tm-pt-60">
-	                        <div class="tm-post-link-inner">
-	                            <img src="img/img-01.jpg" alt="Image" class="img-fluid">                            
-	                        </div>
-	                        <span class="position-absolute tm-new-badge">New</span>
-	                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">活動名稱</h2>
-	                    </a> 
-	                                       
-	                    <p class="tm-pt-30">
-	                        活動介紹
-	                    </p>
-	                    
-	                    <div class="d-flex justify-content-between tm-pt-45">
-	                        <span class="tm-color-primary">活動類型</span>
-	                        <span class="tm-color-primary">活動日期</span>
-	                    </div>
-	                    
-	                    <hr>
-	                    <div class="d-flex justify-content-between">
-	                        <span>點擊率(?)</span>
-	                        <span>刊登者</span>
-	                    </div>
-	                </article>
-	                
-	                <!-- 第六資訊 -->
-	                <article class="col-12 col-md-6 tm-post">
-	                    <hr class="tm-hr-primary">
-	                    <a href="EventDetail.jsp" class="effect-lily tm-post-link tm-pt-60">
-	                        <div class="tm-post-link-inner">
-	                            <img src="img/img-01.jpg" alt="Image" class="img-fluid">                            
-	                        </div>
-	                        <span class="position-absolute tm-new-badge">New</span>
-	                        <h2 class="tm-pt-30 tm-color-primary tm-post-title">活動名稱</h2>
-	                    </a> 
-	                                       
-	                    <p class="tm-pt-30">
-	                        活動介紹
-	                    </p>
-	                    
-	                    <div class="d-flex justify-content-between tm-pt-45">
-	                        <span class="tm-color-primary">活動類型</span>
-	                        <span class="tm-color-primary">活動日期</span>
-	                    </div>
-	                    
-	                    <hr>
-	                    <div class="d-flex justify-content-between">
-	                        <span>點擊率(?)</span>
-	                        <span>刊登者</span>
-	                    </div>
-	                </article>
-	            </div>
-	            <!--  頁面跳轉
+	            <!-- 頁面跳轉 
 	            <div class="row tm-row tm-mt-100 tm-mb-75">
 	                <div class="tm-prev-next-wrapper">
 	                    <a href="#" class="mb-2 tm-btn tm-btn-primary tm-prev-next disabled tm-mr-20">Prev</a>
@@ -230,8 +104,8 @@
 	                        </ul>
 	                    </nav>
 	                </div>                
-	            </div> 
-	            -->
+	            </div> -->
+	            
 	                        
 	            <!-- 尾巴灰條 -->
 	            <footer class="row tm-row">
