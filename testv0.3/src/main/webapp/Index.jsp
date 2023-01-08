@@ -65,7 +65,7 @@
     Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
 	Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
 	Statement smt= con.createStatement();
-	String sql = "SELECT *  FROM eventInformation WHERE eventInformation.ID='"+ID+"'";
+	String sql = "SELECT *  FROM eventInformation WHERE eventInformation.ID='"+evemtID+"'";
 	ResultSet rs = smt.executeQuery(sql);
 	%>
     <div class="container-fluid">

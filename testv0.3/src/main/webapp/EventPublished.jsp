@@ -19,7 +19,7 @@ if(request.getParameter("eMail") !=null &&
 		session.setAttribute("access","y"); //access="y"  
 		session.setAttribute("eMail",request.getParameter("eMail"));
 		session.setMaxInactiveInterval(5);
-		response.sendRedirect("UnitInformation.jsp");
+		response.sendRedirect("UnitInfo.jsp");
 	}else
 		out.println("帳號密碼不符！請重新登入");
 	}
@@ -92,7 +92,7 @@ if(request.getParameter("eMail") !=null &&
             </div>
             
             <!-- 登入帳號輸入區 -->
-            <form method="POST" style="text-align:center" action="UnitInformation.jsp">
+            <form method="POST" style="text-align:center" action="UnitInfo.jsp">
 				<div><h1><b>單位登入</b></h1></div>
 				<br/>
 				<div><h3>帳&nbsp;&nbsp;號:&nbsp;<input type="text" placeholder="輸入您的Gmail帳號..." name="eMail" required></h3></div>

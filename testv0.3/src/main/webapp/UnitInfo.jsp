@@ -1,7 +1,8 @@
-<%@page contentType="text/html"%>
-<%@page pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <%@page import="java.sql.*"%>
 <jsp:useBean id='objDBConfig' scope='application' class='hitstd.group.tool.database.DBConfig' />
+
 <html>
 
 <head>
@@ -62,7 +63,15 @@
             </p>
         </div>
     </header>
-    
+    <%
+		Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
+		Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
+		//out.println("Con= "+con);
+		Statement smt= con.createStatement();
+		String sql = "SELECT * FROM creator left join eventInformation on creator.creatorNum=eventInformation.host WHERE creatorEmail ='" +request.getParameter("creatorEmail")+"'";
+		ResultSet rs = smt.executeQuery(sql);
+		rs.next();
+	%>
 	<div class="container-fluid">
         <main class="tm-main">
             <div class="row tm-row tm-mb-45">
@@ -81,24 +90,17 @@
 				<br/>
 				<br/>
 				<br/>
-				<div><h3>單位名稱:&nbsp;
-					 <input type="text" placeholder="請輸入單位名稱..." name="creatorName" /></h3></div>
+				<div class="container-fluid">
+        <main class="tm-main">
+            	<div class="col-12" style="text-align:right">
+                	<b><%=rs.getString("contactPerson") %></b>&nbsp;&nbsp;您好!歡迎登入～ 
+                </div>
+            	<hr class="tm-hr-primary tm-mb-55">
+            
+			
+		    
+		    
 				
-				<br/>
-				<div><h3>電子郵件:&nbsp;
-					 <input type="text" placeholder="請輸入帳號..." name="eMail" ></h3></div>
-				
-				<br/>
-				<div><h3>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;碼:&nbsp;
-					 <input type="password" placeholder="請輸入密碼..." name="creatorPwd" ></h3></div>
-				
-				<br/>
-				<div>
-				    <h4>
-				   		<input type="reset" id="send" value="修改" />&nbsp;&nbsp;
-				    	<input type="submit" id="send" value="儲存" />			
-				    </h4>
-				</div> 
 			</form>
 =======
                 </div>
@@ -106,35 +108,8 @@
 >>>>>>> e10edd584c8419ebe25f5382339d662f188b3a6d:testv0.3/src/main/webapp/UnitInformation.jsp
             
             <!--  SELECT * FROM creator WHERE eMail='"+session.getAttribute("creatorName")+"'";-->
-            <%
-			 Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
-			 Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
-			 Statement smt= con.createStatement();
-             
-             
-             
-			 
-            %>
-            <form method="POST">
-            <label for="" style="color:#00999;text-align:right;">主辦單位</label><br>
             
-            <label for="eventTitle" style="color:#00999;text-align:right;">活動名稱</label><br>
-            
-            <label for="eventType" style="color:#00999;text-align:right;">類別</label><br>
-	            <input type="radio" name="view" value="volunteer" checked>志工服務&nbsp;&nbsp;
-	            <input type="radio" name="view" value="lecture" checked>講座&nbsp;&nbsp;
-	            <input type="radio" name="view" value="rabbit" checked>志工服務<br>
-            
-            <label for="eventIntro" style="color:#00999;text-align:right;">活動簡介</label><br>
-            
-            <label for="eventDate" style="color:#00999;text-align:right;">活動簡介</label><br>
-            
-            <label for="eventPlace" style="color:#00999;text-align:right;">活動簡介</label><br>
-            
-            <label for="eventStart" style="color:#00999;text-align:right;">活動簡介</label><br>
-            <label for="eventEnd" style="color:#00999;text-align:right;">活動簡介</label><br>
-            </form>
-            
+           
             
             <!--尾巴邊邊線條-->
 			<footer class="row tm-row">
