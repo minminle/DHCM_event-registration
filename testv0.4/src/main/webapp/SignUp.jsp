@@ -28,7 +28,7 @@
 				<div><h1><b>註冊帳號</b></h1></div>
 				<br/>
 				<div><h3>單位名稱:&nbsp;
-					 <input type="text" placeholder="請輸入單位名稱..." name="creatorName" /></h3></div>
+					 <input type="text" placeholder="請輸入單位名稱..." name="creatorName" ></h3></div>
 				
 				<br/>
 				<div><h3>帳&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;號:&nbsp;

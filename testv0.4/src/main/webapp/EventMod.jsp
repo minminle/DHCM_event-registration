@@ -29,7 +29,7 @@
 				<div><h1><b>新增活動</b></h1></div>
 				<br/>
 				<div><h3>活動名稱:&nbsp;
-					 <input type="text" placeholder="請輸入活動名稱..." name="eventTitle" /></h3></div>
+					 <input type="text" placeholder="請輸入活動名稱..." name="eventTitle"></h3></div>
 				
 				<br/>
 			<!--  	<div><h3>類&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;別:&nbsp;
@@ -48,31 +48,31 @@
 				
 				<br/>
 				<div><h3>活動簡介:&nbsp;
-					 <input type="text" placeholder="請輸入簡介..." name="eventIntro" ></h3></div>
+					 <input type="text" placeholder="請輸入簡介..." name="eventIntro"></h3></div>
 				
 				<br/>
 				<div><h3>活動日期:&nbsp;
-					 <input type="date"  name="eventDate" /></h3></div>
+					 <input type="date"  name="eventDate"></h3></div>
 				
 				<br/>
 				<div><h3>活動地點:&nbsp;
-					 <input type="text" placeholder="請輸入地址..." name="eventPlace" /></h3></div>
+					 <input type="text" placeholder="請輸入地址..." name="eventPlace"></h3></div>
 				
 				<br/>
 				<div><h3>活動開始時間
-					 <input type="time"  name="eventStart" /></h3></div>
+					 <input type="time"  name="eventStart" ></h3></div>
 				
 				<br/>
 				<div><h3>活動結束時間
-					 <input type="time"  name="eventEnd" /></h3></div>
+					 <input type="time"  name="eventEnd"></h3></div>
 				
 				<br/>
 				<div><h3>報名截止日期
-					 <input type="date"  name="endRegistration" /></h3></div>
+					 <input type="date"  name="endRegistration"></h3></div>
 				
 				<br/>
 				<div><h3>名額限制:&nbsp;
-					 <input type="number"  name="quota" /></h3></div>
+					 <input type="number"  name="quota"></h3></div>
 				
 				<br/>
 				<div>

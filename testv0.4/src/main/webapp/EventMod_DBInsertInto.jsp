@@ -9,18 +9,18 @@
 	Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
 	Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
 	Statement smt= con.createStatement();
-	String eventTitle  = new String(request.getParameter("eventTitle").getBytes("8859_1"), "utf-8");
-	String eventIntro  = new String(request.getParameter("eventIntro").getBytes("8859_1"), "utf-8");
-	String eventDate  = new String(request.getParameter("eventDate").getBytes("8859_1"), "utf-8");
-	String eventPlace  = new String(request.getParameter("eventPlace").getBytes("8859_1"), "utf-8");
-	String eventStart  = new String(request.getParameter("eventStart").getBytes("8859_1"), "utf-8");
-	String eventEnd  = new String(request.getParameter("eventEnd").getBytes("8859_1"), "utf-8");
+	String eventTitle 		= new String(request.getParameter("eventTitle").getBytes("8859_1"), "utf-8");
+	String eventIntro 		= new String(request.getParameter("eventIntro").getBytes("8859_1"), "utf-8");
+	String eventDate   		= new String(request.getParameter("eventDate").getBytes("8859_1"), "utf-8");
+	String eventPlace  		= new String(request.getParameter("eventPlace").getBytes("8859_1"), "utf-8");
+	String eventStart  		= new String(request.getParameter("eventStart").getBytes("8859_1"), "utf-8");
+	String eventEnd         = new String(request.getParameter("eventEnd").getBytes("8859_1"), "utf-8");
 	String endRegistration  = new String(request.getParameter("endRegistration").getBytes("8859_1"), "utf-8");
-	String quota  = new String(request.getParameter("quota").getBytes("8859_1"), "utf-8");
+	String quota 		    = new String(request.getParameter("quota").getBytes("8859_1"), "utf-8");
 	smt.execute("INSERT INTO eventInformation (eventTitle, eventIntro, eventDate, eventPlace, eventStart, eventEnd, endRegistration, quota) VALUES(N'"+eventTitle+"',N'"+eventIntro+"',N'"+eventDate+"',N'"+eventPlace+"',N'"+eventStart+"',N'"+eventEnd+"',N'"+endRegistration+"',N'"+quota+"')");
 	con.close();
-	response.sendRedirect("UnitInfo.jsp");
+	response.sendRedirect("Index.jsp");
 	%>
-	
+		
 </body>
 </html>
