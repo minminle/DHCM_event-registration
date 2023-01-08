@@ -1,7 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@include file = "menu.jsp" %>
-<!DOCTYPE html>
+<%@page import="java.sql.*"%>
+<jsp:useBean id='objDBConfig' scope='application' class='hitstd.group.tool.database.DBConfig' />
 <html>
 	<head>
 		<meta charset="UTF-8">
@@ -15,6 +16,17 @@
 	
 	<body>
 	<%request.setCharacterEncoding("UTF-8"); %>
+	
+	<%
+		Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
+		Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
+		//out.println("Con= "+con);
+		Statement smt= con.createStatement();
+		String sql = "SELECT * FROM eventInformation";
+		ResultSet rs = smt.executeQuery(sql);
+		rs.next();
+	%>
+	
 	<div class="container-fluid">
         <main class="tm-main">
             <div class="row tm-row tm-mb-45">
@@ -22,8 +34,49 @@
                     <hr class="tm-hr-primary tm-mb-55">
                 </div>
             </div>
-	
-	
+            	<div class="col-12">
+            	<img src="<%=rs.getString("eventPic") %>" alt="">
+            	</div>
+            	
+				<div class="col-sm-9"><h4>
+		    		<label for="creatorName" class="col-sm-3 col-form-label tm-color-primary">活動名稱</label>
+		    		<%=rs.getString("eventTitle") %></h4>
+		    	</div>
+		    	
+		    	<div class="col-sm-9"><h4>
+		    		<label for="creatorName" class="col-sm-3 col-form-label tm-color-primary">主辦單位</label>
+		    		<%=rs.getString("host") %></h4>
+		    	</div>
+		    	
+		    	<div class="col-sm-9"><h4>
+		    		<label for="creatorName" class="col-sm-3 col-form-label tm-color-primary">活動簡介</label>
+		    		<%=rs.getString("eventIntro") %></h4>
+		    	</div>
+		    	
+		    	<div class="col-sm-9"><h4>
+		    		<label for="creatorName" class="col-sm-3 col-form-label tm-color-primary">活動日期</label>
+		    		<%=rs.getString("eventDate") %></h4>
+		    	</div>
+		    	
+		    	<div class="col-sm-9"><h4>
+		    		<label for="creatorName" class="col-sm-3 col-form-label tm-color-primary">活動地點</label>
+		    		<%=rs.getString("eventPlace") %></h4>
+		    	</div>
+		    	
+		    	<div class="col-sm-9"><h4>
+		    		<label for="creatorName" class="col-sm-3 col-form-label tm-color-primary">活動時間</label>
+		    		<%=rs.getString("eventStart") %>～<%=rs.getString("eventEnd") %></h4>
+		    	</div>
+				
+				<div class="col-sm-9"><h4>
+		    		<label for="creatorName" class="col-sm-3 col-form-label tm-color-primary">報名截止日期</label>
+		    		<%=rs.getString("endRegistration") %></h4>
+		    	</div>
+		    	
+		    	<div class="col-sm-9"><h4>
+		    		<label for="creatorName" class="col-sm-3 col-form-label tm-color-primary">名額限制</label>
+		    		<%=rs.getString("quota") %></h4>
+		    	</div>
 	
 	
 	
