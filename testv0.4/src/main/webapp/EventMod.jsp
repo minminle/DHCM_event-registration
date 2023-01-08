@@ -24,7 +24,7 @@
             </div>
             
 			<!-- 新增活動輸入區 -->
-            <form method="POST" style="text-align:center" action="Eventmod_DBInsertInto.jsp">
+            <form method="POST"  action="EventMod_DBInsertInto.jsp">
             
 				<div><h1><b>新增活動</b></h1></div>
 				<br/>

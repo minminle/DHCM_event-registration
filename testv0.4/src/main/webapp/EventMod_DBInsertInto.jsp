@@ -17,9 +17,9 @@
 	String eventEnd  = new String(request.getParameter("eventEnd").getBytes("8859_1"), "utf-8");
 	String endRegistration  = new String(request.getParameter("endRegistration").getBytes("8859_1"), "utf-8");
 	String quota  = new String(request.getParameter("quota").getBytes("8859_1"), "utf-8");
-	smt.execute("INSERT INTO eventIaformation (eventTitle, eventIntro, eventDate, eventPlace, eventStart, eventEnd, endRegistration, quota) VALUES(N'"+eventTitle+"',N'"+eventIntro+"',N'"+eventDate+"',N'"+eventPlace+"',N'"+eventStart+"',N'"+eventEnd+"',N'"+endRegistration+"',N'"+quota+"')");
+	smt.execute("INSERT INTO eventInformation (eventTitle, eventIntro, eventDate, eventPlace, eventStart, eventEnd, endRegistration, quota) VALUES(N'"+eventTitle+"',N'"+eventIntro+"',N'"+eventDate+"',N'"+eventPlace+"',N'"+eventStart+"',N'"+eventEnd+"',N'"+endRegistration+"',N'"+quota+"')");
 	con.close();
-	response.sendRedirect("CreatorLogin.jsp");
+	response.sendRedirect("UnitInfo.jsp");
 	%>
 	
 </body>
