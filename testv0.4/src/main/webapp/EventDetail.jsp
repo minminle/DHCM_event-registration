@@ -23,6 +23,7 @@
 		//out.println("Con= "+con);
 		Statement smt= con.createStatement();
 		String sql = "SELECT * FROM eventInformation";
+		String sql1 = "SELECT * FROM applicant INNER JOIN totalData ON applicant.number = totalData.applicant";
 		ResultSet rs = smt.executeQuery(sql);
 		rs.next();
 	%>
@@ -77,8 +78,39 @@
 		    		<label for="creatorName" class="col-sm-3 col-form-label tm-color-primary">名額限制</label>
 		    		<%=rs.getString("quota") %></h4>
 		    	</div>
-	
-	
+		    	
+		    	<br>
+		    	<div class="col-sm-9">
+		    	<label for="applicant" class="col-sm-3 col-form-label tm-color-primary">填寫報名資料</label>
+				<form method="POST" action="Applicant_DBInsertInto.jsp">
+                       <label for="applicantName" class="col-sm-3 col-form-label tm-color-primary">姓名</label>
+                       		<div class="col-sm-9">
+                       		<input class="form-control mr-0 ml-auto" name="applicantName" id="name" type="text" required>  	                 
+                 			</div>
+                 			
+                 	   <label for="eMail"  class="col-sm-3 col-form-label tm-color-primary">e-mail</label>
+                       		<div class="col-sm-9">
+                       		<input class="form-control mr-0 ml-auto" name="eMail" id="eMail" type="text" required>  	                 
+                 			</div>	
+                 				
+                 	   <label for="phone"  class="col-sm-3 col-form-label tm-color-primary">連絡電話</label>
+                       		<div class="col-sm-9">
+                       		<input class="form-control mr-0 ml-auto" name="phone" id="phone" type="text" required>  	                 
+                 			</div>
+                 			
+                 	   <label for="identity"  class="col-sm-3 col-form-label tm-color-primary">身分</label>
+                       		<div class="col-sm-9">
+                       		<input class="form-control mr-0 ml-auto" name="identity" id="identity" type="text" required>  	                 
+                 			</div>
+                 			<div>
+				            &nbsp;
+				            &nbsp;
+				            &nbsp;
+				            &nbsp;
+				            <h3><input type="submit" id="send" value="我要報名" /></h3>
+				            </div> 
+			      </form>
+				</div>
 	
 				<!-- 尾巴灰條 -->
 	            <footer class="row tm-row">
