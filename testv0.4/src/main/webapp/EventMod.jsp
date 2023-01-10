@@ -53,7 +53,7 @@
             <form method="POST" style="text-align:left" action="EventMod_DBInsertInto.jsp">
 				<div><h1><b>新增活動</b></h1></div>
 				<br/>
-				<div><h3>活動封面：&nbsp;
+				<!--  <div><h3>活動封面：&nbsp;
 					 <input type="file" placeholder="請上傳活動封面..." name="eventPic" ></h3></div>
 					 <input type="button" onClick="javascript:pic();" name=submit value="上傳" />
 						<script language="javascript">  
@@ -63,7 +63,7 @@
 							document.form.enctype="multipart/form-data";
 							document.form.submit();
 						}  
-						</script>
+						</script>-->
 				<br/>
 				<div><h3>活動名稱：&nbsp;
 					 <input type="text" placeholder="請輸入活動名稱..." name="eventTitle" ></h3></div>
