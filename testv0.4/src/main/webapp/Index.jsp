@@ -53,7 +53,7 @@
 		                    
 		                    <a href="EventDetail.jsp?eventNum=<%=rs.getString("eventNum")%>" class="effect-lily tm-post-link tm-pt-60">
 		                        <div class="tm-post-link-inner">
-		                            <img src="<%=rs.getString("eventPic")%>" alt=""  class="img-fluid">                            
+		                            <img src="<%=rs.getString("eventPic")%>" alt=""  class="img-fluid" width="50%">                            
 		                        </div>
 		                        <span class="position-absolute tm-new-badge">New</span>
 		                        <h2 class="tm-pt-30 tm-color-primary tm-post-title"><%=rs.getString("eventTitle")%></h2>

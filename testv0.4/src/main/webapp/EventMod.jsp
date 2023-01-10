@@ -55,7 +55,15 @@
 				<br/>
 				<div><h3>活動封面：&nbsp;
 					 <input type="file" placeholder="請上傳活動封面..." name="eventPic" ></h3></div>
-				
+					 <input type="button" onClick="javascript:pic();" name=submit value="上傳" />
+						<script language="javascript">  
+						//點選提交按鈕觸發下面的函式
+						function pic(){  
+							document.form.action="UnitInfoEdit_DBUpdate_pic.jsp";
+							document.form.enctype="multipart/form-data";
+							document.form.submit();
+						}  
+						</script>
 				<br/>
 				<div><h3>活動名稱：&nbsp;
 					 <input type="text" placeholder="請輸入活動名稱..." name="eventTitle" ></h3></div>

@@ -39,7 +39,7 @@
             </div>
             
             	<div class="col-12">
-            	<img src="<%=rs.getString("eventPic") %>" alt="">
+            	<img src="<%=rs.getString("eventPic") %>" alt="" width="60%">
             	</div>
             	
 				<div class="col-sm-9"><h4>

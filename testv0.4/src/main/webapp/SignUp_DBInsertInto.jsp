@@ -9,7 +9,7 @@
 	Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
 	Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
 	Statement smt= con.createStatement();
-	String creatorPic  = new String(request.getParameter("creatorPic"));
+	String creatorPic  = new String(request.getParameter("creatorPic").getBytes("8859_1"), "utf-8");
 	String creatorAcc  = new String(request.getParameter("creatorEmail").getBytes("8859_1"), "utf-8");
 	String creatorPwd = new String(request.getParameter("creatorPwd").getBytes("8859_1"), "utf-8");	
 	String creatorName  = new String(request.getParameter("creatorName").getBytes("8859_1"), "utf-8");
