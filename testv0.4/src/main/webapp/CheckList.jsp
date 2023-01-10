@@ -39,7 +39,7 @@
 			  	Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
 				Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
 				Statement smt= con.createStatement();
-				String sql = "SELECT * FROM creator left join eventInformation on creator.creatorNum=eventInformation.host WHERE creatorEmail ='" +request.getParameter("creatorEmail")+"'";
+				String sql = "SELECT * FROM creator left join eventInformation on creator.creatorNum=eventInformation.host WHERE creatorEmail ='" +session.getAttribute("accessID")+"'";
 				ResultSet rs = smt.executeQuery(sql);
 				int num=1;
 				

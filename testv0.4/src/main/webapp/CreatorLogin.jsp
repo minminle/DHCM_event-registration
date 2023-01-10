@@ -3,23 +3,23 @@
 <%@include file ="menu.jsp" %>
 <%@page import="java.sql.*"%>
 <jsp:useBean id='objDBConfig' scope='session' class='hitstd.group.tool.database.DBConfig' />
-<%
-if(request.getParameter("creatorEmail") !=null &&
-	request.getParameter("creatorPwd") !=null){
-	Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
-	Statement smt= con.createStatement();
-	String getpaperdata = "SELECT * FROM creator WHERE creatorEmail='"+
-			request.getParameter("creatorEmail")+"' AND creatorPwd='" +
-			request.getParameter("creatorPwd")+"'";
-	ResultSet paperrs = smt.executeQuery(getpaperdata);
-	if(paperrs.next()){
-		session.setAttribute("accessId",request.getParameter("creatorEmail"));
-		//session.setMaxInactiveInterval(20); 自動登出
-		response.sendRedirect("UnitInfo.jsp");
-	}else
-		out.println("帳號密碼不符！請重新登入");
+<%--	<%
+	if(request.getParameter("creatorEmail") !=null &&
+		request.getParameter("creatorPwd") !=null){
+		Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
+		Statement smt= con.createStatement();
+		String getpaperdata = "SELECT * FROM creator WHERE creatorEmail='"+
+				request.getParameter("creatorEmail")+"' AND creatorPwd='" +
+				request.getParameter("creatorPwd")+"'";
+		ResultSet paperrs = smt.executeQuery(getpaperdata);
+		if(paperrs.next()){
+			session.setAttribute("accessID",request.getParameter("creatorEmail"));
+			//session.setMaxInactiveInterval(20); 自動登出
+			response.sendRedirect("UnitInfo.jsp");
+		}else
+			out.println("帳號密碼不符！請重新登入");
 }
-%>
+%>	--%>
 
 <html>
 	<head>
@@ -44,7 +44,7 @@ if(request.getParameter("creatorEmail") !=null &&
             </div>
             
             <!-- 登入帳號輸入區 -->
-            <form method="POST" style="text-align:center" action="UnitInfo.jsp">
+            <form method="POST" style="text-align:center" action="CreatorLogin_DBSelect.jsp">
 				<div><h1><b>單位登入</b></h1></div>
 				<br/>
 				

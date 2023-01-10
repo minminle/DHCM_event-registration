@@ -50,7 +50,7 @@
 		Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
 		//out.println("Con= "+con);
 		Statement smt= con.createStatement();
-		String sql = "SELECT * FROM creator left join eventInformation on creator.creatorNum=eventInformation.host WHERE creatorEmail ='" +request.getParameter("creatorEmail")+"'";
+		String sql = "SELECT * FROM creator left join eventInformation on creator.creatorNum=eventInformation.host WHERE creatorEmail ='" +session.getAttribute("accessID")+"'";
 		ResultSet rs = smt.executeQuery(sql);
 		rs.next();
 	%>
@@ -58,7 +58,7 @@
 	<div class="container-fluid">
         <main class="tm-main">
             	<div class="col-12" style="text-align:right">
-                	<b><%out.println("("+session.getAttribute("accessName")+")");%></b>&nbsp;&nbsp;您好!歡迎登入～ 
+                	<b><%out.println(session.getAttribute("accessName"));%></b>&nbsp;&nbsp;您好!歡迎登入～ 
                 	               </div>
             	<hr class="tm-hr-primary tm-mb-55">
             
