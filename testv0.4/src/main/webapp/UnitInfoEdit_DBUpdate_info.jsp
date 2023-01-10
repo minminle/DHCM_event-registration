@@ -21,13 +21,13 @@
 			Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
 			Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
 			Statement smt= con.createStatement();
-			String creatorName = new String(request.getParameter("creatorName").getBytes("8859_1"), "utf-8");
-			String creatorEmail = new String(request.getParameter("creatorEmail").getBytes("8859_1"), "utf-8");
-			String creatorPwd = new String(request.getParameter("creatorPwd").getBytes("8859_1"), "utf-8");
-			String contactPerson = new String(request.getParameter("contactPerson").getBytes("8859_1"), "utf-8");
-			String contactPhone = new String(request.getParameter("contactPhone").getBytes("8859_1"), "utf-8");
-			smt.executeUpdate("UPDATE creator SET creatorName ='" + creatorName+"', creatorEmail ='" + creatorEmail+"', creatorPwd ='" + creatorPwd +"', contactPerson ='" + contactPerson +"', contactPhone ='" + contactPhone+"' WHERE creatorEmail ='" + request.getParameter("creatorEmail")+"'");
-			response.sendRedirect("UnitInfo.jsp?creatorEmail="+request.getParameter("creatorEmail")+"");
+			String creatorName = new String(request.getParameter("creatorName"));
+			String creatorEmail = new String(request.getParameter("creatorEmail"));
+			String creatorPwd = new String(request.getParameter("creatorPwd"));
+			String contactPerson = new String(request.getParameter("contactPerson"));
+			String contactPhone = new String(request.getParameter("contactPhone"));
+			smt.executeUpdate("UPDATE creator SET creatorName ='" + creatorName+"', creatorEmail ='" + creatorEmail+"', creatorPwd ='" + creatorPwd +"', contactPerson ='" + contactPerson +"', contactPhone ='" + contactPhone+"' WHERE creatorEmail ='" + session.getAttribute("accessID")+"'");
+			response.sendRedirect("UnitInfo.jsp?creatorEmail="+session.getAttribute("accessID")+"");
 		%>
 	
 	</body>

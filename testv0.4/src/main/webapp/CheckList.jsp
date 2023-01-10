@@ -59,8 +59,8 @@
 			    <th>活動日期</th>
 			    <th>活動地點</th>
 			    <th>名額限制</th>
-			    <th>已入取名額</th>
-			    <th>簽核</th>
+			    <th>已錄取名額</th>
+			    
 			  </tr>
 			  <%
 			  	Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
@@ -71,7 +71,7 @@
 				int num=1;
 				
 				while(rs.next()){
-					out.println("<tr><td>" + rs.getString("eventNum") + "</td><td>" + rs.getString("eventTitle") + "</td><td>"  + rs.getString("eventDate") + "</td><td>" + rs.getString("eventPlace")+ "</td><td>" + rs.getString("quota")+ "</td><td>" + rs.getString("admitted")+ "</td><td></td></tr>");
+					out.println("<tr><td>" + rs.getString("eventNum") + "</td><td>" + rs.getString("eventTitle") + "</td><td>"  + rs.getString("eventDate") + "</td><td>" + rs.getString("eventPlace")+ "</td><td>" + rs.getString("quota")+ "</td><td>" + rs.getString("admitted")+ "</td></tr>");
 					num++;
 				}
 			
