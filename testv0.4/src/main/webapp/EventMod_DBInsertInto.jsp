@@ -21,7 +21,7 @@
 	String quota = new String(request.getParameter("quota").getBytes("8859_1"), "utf-8");
 	smt.execute("INSERT INTO eventInformation (eventTitle, eventType, eventIntro, eventDate, eventPlace, eventStart, eventEnd, endRegistration, quota) VALUES(N'"+eventTitle+"',N'"+eventType+"',N'"+eventIntro+"',N'"+eventDate+"',N'"+eventPlace+"',N'"+eventStart+"',N'"+eventEnd+"',N'"+endRegistration+"',N'"+quota+"')");
 	con.close();
-	response.sendRedirect("Index.jsp");
+	response.sendRedirect("CheckList.jsp");
 	%>
 		
 </body>

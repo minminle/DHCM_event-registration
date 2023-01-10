@@ -72,7 +72,8 @@
 				<div><h3>活動類型：&nbsp;
 					 <input type="radio" name="eventType" value="講座">講座
 					 <input type="radio" name="eventType" value="學習">學習
-					 <input type="radio" name="eventType" value="系會">系會</h3></div>
+					 <input type="radio" name="eventType" value="系會">系會
+					 <input type="radio" name="eventType" value="市集">市集</h3></div>
 					 
 				<br/>
 				<div><h3>活動簡介：&nbsp;
