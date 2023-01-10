@@ -20,7 +20,7 @@ public class FolderConfig {
 		 String Path="img/";
 		
 		//合佳
-		 //String Path="";
+		 //String Path="img/";
 			 
 		//嘉珉
 		 //String Path="";
