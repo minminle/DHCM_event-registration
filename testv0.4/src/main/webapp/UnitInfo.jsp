@@ -77,7 +77,7 @@
 			
 		    <form action="UnitInfoEdit.jsp" method="post">
 		    	<div class="col-sm-9"><h4>
-		    		<label for="creatorPic" class="col-sm-3 col-form-label tm-color-primary">單位Logo</label>
+		    		<label for="creatorPic" class="col-sm-3 col-form-label tm-color-primary">單位LOGO</label>
 		    		<img src="<%=rs.getString("creatorPic") %>" alt="單位Logo" width="40%" ></h4>	    		
 		    	</div>
 		    	

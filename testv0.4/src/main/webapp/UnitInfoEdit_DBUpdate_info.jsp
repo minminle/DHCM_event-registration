@@ -26,7 +26,7 @@
 			String creatorPwd = new String(request.getParameter("creatorPwd").getBytes("8859_1"), "utf-8");
 			String contactPerson = new String(request.getParameter("contactPerson").getBytes("8859_1"), "utf-8");
 			String contactPhone = new String(request.getParameter("contactPhone").getBytes("8859_1"), "utf-8");
-			smt.executeUpdate("UPDATE creator SET creatorName ='" + creatorName+"', creatorEmail ='" + creatorEmail+"', creatorPwd ='" + creatorPwd +"', contactPerson ='" + contactPerson +"', contactPhone ='" + contactPhone+"' WHERE creatorEmail ='" + request.getParameter("creatorEmail")+"' ");
+			smt.executeUpdate("UPDATE creator SET creatorName ='" + creatorName+"', creatorEmail ='" + creatorEmail+"', creatorPwd ='" + creatorPwd +"', contactPerson ='" + contactPerson +"', contactPhone ='" + contactPhone+"' WHERE creatorEmail ='" + request.getParameter("creatorEmail")+"'");
 			response.sendRedirect("UnitInfo.jsp?creatorEmail="+request.getParameter("creatorEmail")+"");
 		%>
 	

@@ -47,9 +47,20 @@
 			}
 			
 			.button3:hover {
-			  background-color: #c1e3dd;
+			  background-color: #ffa0ac;
 			  color: block;
 			}	
+			
+			.button4 {
+			  background-color: white; 
+			  color: black; 
+			  border: 2px solid #a2c2c9;
+			}
+			
+			.button4:hover {
+			  background-color: #ffeeac;
+			  color: block;
+			}
 		</style>
 	</head>
 	
@@ -59,11 +70,12 @@
 		Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
 		Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
 		Statement smt= con.createStatement();
-		String sql = "SELECT * FROM creator left join eventInformation on creator.creatorName=eventInformation.host WHERE creatorEmail ='" +request.getParameter("creatorEmail")+"'";
+		String sql = "SELECT * FROM creator left join eventInformation on creator.creatorName=eventInformation.host WHERE creatorEmail ='" +session.getAttribute("accessID")+"'";
 		String option="SELECT * FROM eventInformation";
 		ResultSet rs = smt.executeQuery(sql);
 		rs.next();
 		%>
+		
 		<div class="container-fluid">
 	        <main class="tm-main">
 	            <div class="col-12" style="text-align:right">
@@ -72,20 +84,24 @@
                 </div>
             	<hr class="tm-hr-primary tm-mb-55">
 	            	
-	            <form action="UnitInfoEdit_DBUpdate_info.jsp?creatorEmail=<%=request.getParameter("creatorEmail")%>" method="post" name="form" >
+	            <form action="UnitInfoEdit_DBUpdate_info.jsp?creatorEmail=<%out.println(session.getAttribute("accessID"));%>" method="post" name="form" >
 			        <div class="col-sm-9">
-			        <img src="<%=rs.getString("creatorPic") %>" alt="單位Logo" width="40%" >
-			        <h3>選擇要上傳的文件:</h3>
-		            <input type="file" name="theFirstFile" size="50" />
-		            <input type="button" onClick="javascript:pic();" name=uploadButton value="上傳" />
-					<script language="javascript">  
-					//點選提交按鈕觸發下面的函式
-					function pic(){  
-						document.form.action="UnitInfoEdit_DBUpdate_pic.jsp";
-						document.form.enctype="multipart/form-data";
-						document.form.submit();
-					}  
-					</script>
+			        
+			        <label for="creatorName" class="col-sm-3 col-form-label tm-color-primary"><h4>單位LOGO</h4></label>
+			        <img src="<%=rs.getString("creatorPic") %>" alt="單位Logo" width="40%" ><br/><br/>
+			        
+			        <h4>選擇新圖片：
+		            <input type="file" name="theFirstFile">
+		            
+		            <input type="button" onClick="javascript:pic();" name=uploadButton value="上傳"></h4>
+						<script language="javascript">  
+						//點選提交按鈕觸發下面的函式
+						function pic(){  
+							document.form.action="UnitInfoEdit_DBUpdate_pic.jsp";
+							document.form.enctype="multipart/form-data";
+							document.form.submit();
+						}  
+						</script>
 			        </div>
 			        
 			        <div class="col-sm-9"><h4>
@@ -124,6 +140,7 @@
 			    	</div>	
 			    	
 		            <div style="text-align:center">
+		                <input type ="button" onclick="history.back()" class="button button4" value="回上一頁"></input>
 		              	<button class="button button2" type="submit" name="edit">確認修改</button>
 		            </div>
 	            </form>
