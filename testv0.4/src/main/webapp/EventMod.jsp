@@ -11,13 +11,41 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"> <!-- https://fonts.google.com/ -->
 	    <link rel="stylesheet" href="css/bootstrap.min.css">
 	    <link rel="stylesheet" href="css/templatemo-xtra-blog.css">
+	    <style>
+			.button {
+			  border: none;
+			  color: white;
+			  padding: 5px 15px;
+			  height: 50px;
+  			  border-radius: 20px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 20px;
+			  margin: 4px 2px;
+			  transition-duration: 0.4s;
+			  cursor: pointer;
+			}
+			
+			.button3 {
+			  background-color: white; 
+			  color: black; 
+			  border: 2px solid #a2c2c9;
+			}
+			
+			.button3:hover {
+			  background-color: #c1e3dd;
+			  color: block;
+			}	
+		</style>
 	</head>
 <body>
 <%request.setCharacterEncoding("UTF-8"); %>
 	<div class="container-fluid">
         <main class="tm-main">
             <div class="col-12" style="text-align:right">
-                	<b><%out.println(session.getAttribute("accessName"));%></b>&nbsp;&nbsp;您好!歡迎登入～ 
+                	<b><%out.println(session.getAttribute("accessName"));%></b>&nbsp;&nbsp;您好!歡迎登入～
+                	<br/><input type ="button" onclick="javascript:location.href='CreatorLogin.jsp'" class="button button3" value="登出"></input> 
                 </div>
             	<hr class="tm-hr-primary tm-mb-55">
             
