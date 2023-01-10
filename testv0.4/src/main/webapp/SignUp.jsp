@@ -27,23 +27,23 @@
             <form method="POST" style="text-align:center" action="SignUp_DBInsertInto.jsp">
 				<div><h1><b>註冊帳號</b></h1></div>
 				<br/>
-				<div><h3>單位名稱:&nbsp;
+				<div><h3>單位名稱：&nbsp;
 					 <input type="text" placeholder="請輸入單位名稱..." name="creatorName" ></h3></div>
 				
 				<br/>
-				<div><h3>帳&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;號:&nbsp;
+				<div><h3>帳&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;號：&nbsp;
 					 <input type="text" placeholder="請輸入電子郵件..." name="creatorEmail" ></h3></div>
 				
 				<br/>
-				<div><h3>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;碼:&nbsp;
+				<div><h3>密&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;碼：&nbsp;
 					 <input type="password" placeholder="請輸入密碼..." name="creatorPwd" ></h3></div>
 				
 				<br/>
-				<div><h3>聯&nbsp;&nbsp;&nbsp;絡&nbsp;&nbsp;人:&nbsp;
+				<div><h3>聯&nbsp;&nbsp;&nbsp;絡&nbsp;&nbsp;人：&nbsp;
 					 <input type="text" placeholder="請輸入聯絡人姓名..." name="contactPerson" /></h3></div>
 				
 				<br/>
-				<div><h3>聯絡電話:&nbsp;
+				<div><h3>聯絡電話：&nbsp;
 					 <input type="text" placeholder="請輸入聯絡電話..." name="contactPhone" /></h3></div>
 				
 				<br/>

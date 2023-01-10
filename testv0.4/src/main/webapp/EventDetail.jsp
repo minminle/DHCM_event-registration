@@ -23,8 +23,9 @@
 		//out.println("Con= "+con);
 		Statement smt= con.createStatement();
 		String sql = "SELECT * FROM eventInformation";
-		String sql1 = "SELECT * FROM applicant INNER JOIN totalData ON applicant.number = totalData.applicant";
+		//String sql1 = "SELECT * FROM applicant INNER JOIN totalData ON applicant.number = totalData.applicant";
 		ResultSet rs = smt.executeQuery(sql);
+		
 		rs.next();
 	%>
 	
@@ -35,6 +36,7 @@
                     <hr class="tm-hr-primary tm-mb-55">
                 </div>
             </div>
+            
             	<div class="col-12">
             	<img src="<%=rs.getString("eventPic") %>" alt="">
             	</div>

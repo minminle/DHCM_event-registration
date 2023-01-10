@@ -1,9 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%> 
-<%@include file = "menuCreator.jsp" %>
+    pageEncoding="UTF-8"%>
+<%@include file ="menuCreator.jsp" %>
 <!DOCTYPE html>
 <html>
-	<head>
+<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>新增與修改</title>
@@ -12,9 +12,8 @@
 	    <link rel="stylesheet" href="css/bootstrap.min.css">
 	    <link rel="stylesheet" href="css/templatemo-xtra-blog.css">
 	</head>
-	
-	<body>
-	<%request.setCharacterEncoding("UTF-8"); %>
+<body>
+<%request.setCharacterEncoding("UTF-8"); %>
 	<div class="container-fluid">
         <main class="tm-main">
             <div class="row tm-row tm-mb-45">
@@ -23,56 +22,50 @@
                 </div>
             </div>
             
-			<!-- 新增活動輸入區 -->
-            <form method="POST"  action="EventMod_DBInsertInto.jsp">
-            
+            <!-- 新增活動輸入區 -->
+            <form method="POST" style="text-align:left" action="EventMod_DBInsertInto.jsp">
 				<div><h1><b>新增活動</b></h1></div>
 				<br/>
-				<div><h3>活動名稱:&nbsp;
-					 <input type="text" placeholder="請輸入活動名稱..." name="eventTitle"></h3></div>
+				<div><h3>活動封面：&nbsp;
+					 <input type="file" placeholder="請上傳活動封面..." name="eventPic" ></h3></div>
 				
 				<br/>
-			<!--  	<div><h3>類&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;別:&nbsp;
-					<div class="form-check form-check-inline">
-	 				  <input class="form-check-input" type="radio" name="type" id="" value="講座" checked>
-	  				  <label class="form-check-label" for="">講座</label>
-					</div>
-					<div class="form-check form-check-inline">
-					  <input class="form-check-input" type="radio" name="type" id="" value="學習">
-					  <label class="form-check-label" for="">學習</label>
-					</div>
-					<div class="form-check form-check-inline">
-					  <input class="form-check-input" type="radio" name="type" id="" value="系會">
-					  <label class="form-check-label" for="">系會</label>
-					</div> -->
+				<div><h3>活動名稱：&nbsp;
+					 <input type="text" placeholder="請輸入活動名稱..." name="eventTitle" ></h3></div>
 				
 				<br/>
-				<div><h3>活動簡介:&nbsp;
-					 <input type="text" placeholder="請輸入簡介..." name="eventIntro"></h3></div>
+				<div><h3>活動類型：&nbsp;
+					 <input type="radio" name="eventType" value="講座">講座
+					 <input type="radio" name="eventType" value="學習">學習
+					 <input type="radio" name="eventType" value="系會">系會</h3></div>
+					 
+				<br/>
+				<div><h3>活動簡介：&nbsp;
+					 <input type="text" placeholder="請輸入活動簡介..." name="eventIntro" ></h3></div>
 				
 				<br/>
-				<div><h3>活動日期:&nbsp;
-					 <input type="date"  name="eventDate"></h3></div>
+				<div><h3>活動日期：&nbsp;
+					 <input type="date" placeholder="請輸入活動日期..." name="eventDate" ></h3></div>
 				
 				<br/>
-				<div><h3>活動地點:&nbsp;
-					 <input type="text" placeholder="請輸入地址..." name="eventPlace"></h3></div>
+				<div><h3>活動地點：&nbsp;
+					 <input type="text" placeholder="請輸入活動地點..." name="eventPlace" /></h3></div>
 				
 				<br/>
-				<div><h3>活動開始時間
-					 <input type="time"  name="eventStart" ></h3></div>
+				<div><h3>活動開始時間：&nbsp;
+					 <input type="time" placeholder="請輸入活動開始時間..." name="eventStart" /></h3></div>
 				
 				<br/>
-				<div><h3>活動結束時間
-					 <input type="time"  name="eventEnd"></h3></div>
-				
+				<div><h3>活動結束時間：&nbsp;
+					 <input type="time" placeholder="請輸入活動結束時間..." name="eventEnd" /></h3></div>
+					 
 				<br/>
-				<div><h3>報名截止日期
-					 <input type="date"  name="endRegistration"></h3></div>
-				
+				<div><h3>報名截止日期：&nbsp;
+					 <input type="date" placeholder="請輸入報名截止日期..." name="endRegistration" /></h3></div>
+					 
 				<br/>
-				<div><h3>名額限制:&nbsp;
-					 <input type="number"  name="quota"></h3></div>
+				<div><h3>名額限制：&nbsp;
+					 <input type="number" placeholder="人數..." name="quota" /></h3></div>
 				
 				<br/>
 				<div>
@@ -92,9 +85,10 @@
 	                    2023
 	                </div>
 	            </footer>
-		</main>
-	</div>
+            
+        </main>
+     </div>
 
 
-	</body>
+</body>
 </html>
