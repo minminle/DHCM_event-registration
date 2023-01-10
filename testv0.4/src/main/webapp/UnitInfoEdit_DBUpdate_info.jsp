@@ -22,11 +22,11 @@
 			Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
 			Statement smt= con.createStatement();
 			String creatorName = new String(request.getParameter("creatorName"));
-			String creatorEmail = new String(request.getParameter("creatorEmail"));
+			//String creatorEmail = new String(request.getParameter("creatorEmail"));
 			String creatorPwd = new String(request.getParameter("creatorPwd"));
-			String contactPerson = new String(request.getParameter("contactPerson"));
+			//String contactPerson = new String(request.getParameter("contactPerson"));
 			String contactPhone = new String(request.getParameter("contactPhone"));
-			smt.executeUpdate("UPDATE creator SET creatorName ='" + creatorName+"', creatorEmail ='" + creatorEmail+"', creatorPwd ='" + creatorPwd +"', contactPerson ='" + contactPerson +"', contactPhone ='" + contactPhone+"' WHERE creatorEmail ='" + session.getAttribute("accessID")+"'");
+			smt.executeUpdate("UPDATE creator SET creatorName ='" + creatorName+"', creatorPwd ='" + creatorPwd +"', contactPhone ='" + contactPhone+"' WHERE creatorEmail ='" + session.getAttribute("accessID")+"'");
 			response.sendRedirect("UnitInfo.jsp?creatorEmail="+session.getAttribute("accessID")+"");
 		%>
 	

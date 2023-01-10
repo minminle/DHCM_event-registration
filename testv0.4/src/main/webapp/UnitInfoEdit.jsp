@@ -114,8 +114,7 @@
 		            <div class="col-sm-9"><h4>
 			    		<label for="creatorEmail" class="col-sm-3 col-form-label tm-color-primary">Email帳號</label>
 			    		<%=rs.getString("creatorEmail") %></h4>
-			    		<label for="creatorEmail1" class="col-sm-3 col-form-label tm-color-primary"></label>
-			    		<input type="text" name="creatorEmail" value="<%=rs.getString("creatorEmail") %>" />
+			    		
 		    	  	</div>
 		    	
 			    	<div class="col-sm-9"><h4>
@@ -128,8 +127,7 @@
 			    	<div class="col-sm-9"><h4>
 			    		<label for="contactPerson" class="col-sm-3 col-form-label tm-color-primary">聯絡人</label>
 			    		<%=rs.getString("contactPerson") %></h4>
-			    		<label for="contactPerson1" class="col-sm-3 col-form-label tm-color-primary"></label>
-		    			<input type="text" name="contactPerson" value="<%=rs.getString("contactPerson") %>" />
+			    		
 			    	</div>
 			    	
 			    	<div class="col-sm-9"><h4>
