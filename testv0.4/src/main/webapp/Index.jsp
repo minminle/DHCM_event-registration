@@ -23,7 +23,6 @@
 		Statement smt= con.createStatement();
 		String sql = "SELECT * FROM eventInformation";
 		ResultSet rs = smt.executeQuery(sql);
-		String id = request.getParameter("eventNum");
 		
 	%>
 	    
