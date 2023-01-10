@@ -58,7 +58,7 @@
 	<div class="container-fluid">
         <main class="tm-main">
             	<div class="col-12" style="text-align:right">
-                	<b><%out.println("("+session.getAttribute("accessName")+")");%></b>&nbsp;&nbsp;您好!歡迎登入～ 
+                	<b><%out.println(session.getAttribute("accessName"));%></b>&nbsp;&nbsp;您好!歡迎登入～ 
                 	               </div>
             	<hr class="tm-hr-primary tm-mb-55">
             
