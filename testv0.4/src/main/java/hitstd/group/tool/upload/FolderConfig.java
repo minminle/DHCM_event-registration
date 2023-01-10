@@ -12,7 +12,7 @@ public class FolderConfig {
 		//String DBPath="/Users/sunhochia/Documents/GitHub/DHCM_event-registration/testv0.4/src/main/webapp/img/";
 		
 	   //嘉珉
-		String DBPath="C:/Users/cindy/Desktop/DHCM_event-registration/testv0.4/src/main/webapp/img";
+		String DBPath="C:/Users/cindy/Desktop/DHCM_event-registration/testv0.4/src/main/webapp/img/";
 	   return DBPath;		
 	}
 	public String WebsiteRelativeFilePath(){
