@@ -17,6 +17,11 @@
 			session.setAttribute("access","y");
 			session.setAttribute("accessName",members.getString("contactPerson"));
 			session.setAttribute("accessID",members.getString("creatorEmail"));
+			
+			session.setAttribute("accessUnit",members.getString("creatorName"));
+			session.setAttribute("accessPhone",members.getString("contactPhone"));
+			session.setAttribute("accessPic",members.getString("creatorPic"));
+			
 			//session.setMaxInactiveInterval(20); 自動登出
 			response.sendRedirect("UnitInfo.jsp");
 		}else
