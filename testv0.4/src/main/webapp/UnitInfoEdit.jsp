@@ -88,16 +88,7 @@
 			        <div class="col-sm-9">
 			        <label for="creatorName" class="col-sm-3 col-form-label tm-color-primary"><h4>單位LOGO</h4></label>
 			        <img src="<%=rs.getString("creatorPic") %>" alt="單位Logo" width="40%" ><br/><br/>
-			        <input type="file" name="theFirstFile" size="50" />
-          			<input type="button" onClick="javascript:pic();" name=submitButton value="上傳" />
-			        <script language="javascript">  
-						//點選提交按鈕觸發下面的函式
-						function pic(){  
-							document.form.action="UnitInfoEdit_DBUpdate_pic.jsp";
-							document.form.enctype="multipart/form-data";
-							document.form.submit();
-						}  
-					</script>     
+			            
 			        </div>
 			        
 			        <div class="col-sm-9"><h4>
