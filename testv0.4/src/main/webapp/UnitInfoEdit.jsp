@@ -38,7 +38,18 @@
 			.button2:hover {
 			  background-color: #c1e3dd;
 			  color: block;
-			}			
+			}		
+			
+			.button3 {
+			  background-color: white; 
+			  color: black; 
+			  border: 2px solid #a2c2c9;
+			}
+			
+			.button3:hover {
+			  background-color: #c1e3dd;
+			  color: block;
+			}	
 		</style>
 	</head>
 	
@@ -48,7 +59,7 @@
 		Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
 		Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
 		Statement smt= con.createStatement();
-		String sql = "SELECT * FROM creator left join eventInformation on creator.creatorNum=eventInformation.host WHERE creatorEmail ='" +request.getParameter("creatorEmail")+"'";
+		String sql = "SELECT * FROM creator left join eventInformation on creator.creatorName=eventInformation.host WHERE creatorEmail ='" +request.getParameter("creatorEmail")+"'";
 		String option="SELECT * FROM eventInformation";
 		ResultSet rs = smt.executeQuery(sql);
 		rs.next();
@@ -56,10 +67,10 @@
 		<div class="container-fluid">
 	        <main class="tm-main">
 	            <div class="col-12" style="text-align:right">
-	            	<b><%out.println(session.getAttribute("accessName"));%></b>&nbsp;&nbsp;您好!歡迎登入～ 
-	            </div>
-	            
-	            <hr class="tm-hr-primary tm-mb-55">
+                	<b><%out.println(session.getAttribute("accessName"));%></b>&nbsp;&nbsp;您好!歡迎登入～
+                	<br/><input type ="button" onclick="javascript:location.href='CreatorLogin.jsp'" class="button button3" value="登出"></input> 
+                </div>
+            	<hr class="tm-hr-primary tm-mb-55">
 	            	
 	            <form action="UnitInfoEdit_DBUpdate_info.jsp?creatorEmail=<%=request.getParameter("creatorEmail")%>" method="post" name="form" >
 			        <div class="col-sm-9">

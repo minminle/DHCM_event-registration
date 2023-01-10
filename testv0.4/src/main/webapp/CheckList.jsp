@@ -12,6 +12,33 @@
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"> <!-- https://fonts.google.com/ -->
 	    <link rel="stylesheet" href="css/bootstrap.min.css">
 	    <link rel="stylesheet" href="css/templatemo-xtra-blog.css">
+	    <style>
+			.button {
+			  border: none;
+			  color: white;
+			  padding: 5px 15px;
+			  height: 50px;
+  			  border-radius: 20px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 20px;
+			  margin: 4px 2px;
+			  transition-duration: 0.4s;
+			  cursor: pointer;
+			}
+			
+			.button3 {
+			  background-color: white; 
+			  color: black; 
+			  border: 2px solid #a2c2c9;
+			}
+			
+			.button3:hover {
+			  background-color: #c1e3dd;
+			  color: block;
+			}	
+		</style>
 	</head>
 	
 	<body>
@@ -19,11 +46,11 @@
 	
 	<div class="container-fluid">
         <main class="tm-main">
-            <div class="row tm-row tm-mb-45">
-                <div class="col-12">
-                    <hr class="tm-hr-primary tm-mb-55">
+            <div class="col-12" style="text-align:right">
+                	<b><%out.println(session.getAttribute("accessName"));%></b>&nbsp;&nbsp;您好!歡迎登入～
+                	<br/><input type ="button" onclick="javascript:location.href='CreatorLogin.jsp'" class="button button3" value="登出"></input> 
                 </div>
-            </div>
+            	<hr class="tm-hr-primary tm-mb-55">
 			
 			<table style="width:100%" border="1px solid black" border-collapse="collapse">
 			  <tr>
@@ -39,7 +66,7 @@
 			  	Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
 				Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
 				Statement smt= con.createStatement();
-				String sql = "SELECT * FROM creator left join eventInformation on creator.creatorNum=eventInformation.host WHERE creatorEmail ='" +session.getAttribute("accessID")+"'";
+				String sql = "SELECT * FROM creator left join eventInformation on creator.creatorName=eventInformation.host WHERE creatorEmail ='" +session.getAttribute("accessID")+"'";
 				ResultSet rs = smt.executeQuery(sql);
 				int num=1;
 				

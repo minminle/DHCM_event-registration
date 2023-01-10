@@ -2,7 +2,7 @@
     pageEncoding="UTF-8"%>
 <%@include file = "menu.jsp" %>
 <%@page import="java.sql.*"%>
-<jsp:useBean id='objDBConfig' scope='application' class='hitstd.group.tool.database.DBConfig' />
+<jsp:useBean id='objDBConfig' scope='session' class='hitstd.group.tool.database.DBConfig' />
 <html>
 	<head>
 		<meta charset="UTF-8">
@@ -16,7 +16,7 @@
 	
 	<body>
 	<%request.setCharacterEncoding("UTF-8"); %>
-	
+	<%! int num=0; //宣告全域變數num %>
 	<%	
 		Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
 		Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
@@ -24,6 +24,7 @@
 		String sql = "SELECT * FROM eventInformation";
 		ResultSet rs = smt.executeQuery(sql);
 		String id = request.getParameter("eventNum");
+		
 	%>
 	    
 	    <div class="container-fluid">
