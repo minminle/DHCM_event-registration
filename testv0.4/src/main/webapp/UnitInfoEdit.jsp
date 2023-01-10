@@ -88,6 +88,7 @@
 			        <div class="col-sm-9">
 			        <label for="creatorName" class="col-sm-3 col-form-label tm-color-primary"><h4>單位LOGO</h4></label>
 			        <img src="<%=rs.getString("creatorPic") %>" alt="單位Logo" width="40%" ><br/><br/>
+			            
 			        </div>
 			        
 			        <div class="col-sm-9"><h4>

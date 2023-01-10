@@ -1,6 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@include file ="menu.jsp" %>
+
 <!DOCTYPE html>
 <html>
 	<head>
@@ -28,7 +29,8 @@
 				<div><h1><b>註冊帳號</b></h1></div>
 				<br/>
 				<div><h3>單位LOGO：&nbsp;
-					 <input type="file"  name="creatorPic" ></h3></div>
+				
+					 <input type="file"  name="creatorPic" value="img"></h3></div>
 				
 				<br/>
 				<div><h3>單位名稱：&nbsp;

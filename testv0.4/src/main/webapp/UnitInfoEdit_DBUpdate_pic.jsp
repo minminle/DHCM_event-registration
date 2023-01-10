@@ -20,7 +20,7 @@
 			Class.forName("net.ucanaccess.jdbc.UcanaccessDriver");
 			Connection con=DriverManager.getConnection("jdbc:ucanaccess://"+objDBConfig.FilePath()+";");
 			Statement smt= con.createStatement();
-			smt.executeUpdate("UPDATE creator SET creatorPic ='"+objFolderConfig.WebsiteRelativeFilePath()+fileName+ "' WHERE creatorEmail ='" + session.getAttribute("creatorEmail")+"' ");
-			response.sendRedirect("UnitInfo.jsp?creatorEmail="+session.getAttribute("creatorEmail")+"");
+			smt.executeUpdate("UPDATE creator SET creatorPic ='"+ objFolderConfig.WebsiteRelativeFilePath()+fileName+ "' WHERE creatorEmail ='" + session.getAttribute("creatorEmail")+"' ");
+			response.sendRedirect("UnitInfo.jsp?creatorEmail="+ session.getAttribute("creatorEmail")+"");
 	}		
 %>
