@@ -12,8 +12,8 @@ public class FolderConfig {
 		//String DBPath="/Users/sunhochia/Documents/GitHub/DHCM_event-registration/testv0.4/src/main/webapp/img/";
 		
 	   //嘉珉
-		//String DBPath="C:/Users/cindy/Desktop/DHCM_event-registration/testv0.4/src/main/webapp/img";
-	   return DBPath;		
+		//String DBPath="C:/Users/cindy/Desktop/DHCM_event-registration/testv0.4/src/main/webapp/img/";
+
 	}
 	public String WebsiteRelativeFilePath(){
 		//宜蓁
