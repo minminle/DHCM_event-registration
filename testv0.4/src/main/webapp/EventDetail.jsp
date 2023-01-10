@@ -25,6 +25,7 @@
 		String sql = "SELECT * FROM eventInformation";
 		//String sql1 = "SELECT * FROM applicant INNER JOIN totalData ON applicant.number = totalData.applicant";
 		ResultSet rs = smt.executeQuery(sql);
+		//ResultSet rs1 = smt.executeQuery(sql1);
 		
 		rs.next();
 	%>

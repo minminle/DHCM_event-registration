@@ -6,7 +6,7 @@
 <head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title>新增與修改</title>
+		<title>新增活動</title>
 		<link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"> <!-- https://fonts.google.com/ -->
 	    <link rel="stylesheet" href="css/bootstrap.min.css">
@@ -16,11 +16,10 @@
 <%request.setCharacterEncoding("UTF-8"); %>
 	<div class="container-fluid">
         <main class="tm-main">
-            <div class="row tm-row tm-mb-45">
-                <div class="col-12">
-                    <hr class="tm-hr-primary tm-mb-55">
+            <div class="col-12" style="text-align:right">
+                	<b><%out.println(session.getAttribute("accessName"));%></b>&nbsp;&nbsp;您好!歡迎登入～ 
                 </div>
-            </div>
+            	<hr class="tm-hr-primary tm-mb-55">
             
             <!-- 新增活動輸入區 -->
             <form method="POST" style="text-align:left" action="EventMod_DBInsertInto.jsp">
