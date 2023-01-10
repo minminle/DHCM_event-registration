@@ -27,6 +27,10 @@
             <form method="POST" style="text-align:center" action="SignUp_DBInsertInto.jsp">
 				<div><h1><b>註冊帳號</b></h1></div>
 				<br/>
+				<div><h3>單位LOGO：&nbsp;
+					 <input type="file"  name="creatorPic" ></h3></div>
+				
+				<br/>
 				<div><h3>單位名稱：&nbsp;
 					 <input type="text" placeholder="請輸入單位名稱..." name="creatorName" ></h3></div>
 				

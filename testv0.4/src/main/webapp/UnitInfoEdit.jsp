@@ -86,22 +86,8 @@
 	            	
 	            <form action="UnitInfoEdit_DBUpdate_info.jsp?creatorEmail=<%out.println(session.getAttribute("accessID"));%>" method="post" name="form" >
 			        <div class="col-sm-9">
-			        
 			        <label for="creatorName" class="col-sm-3 col-form-label tm-color-primary"><h4>單位LOGO</h4></label>
 			        <img src="<%=rs.getString("creatorPic") %>" alt="單位Logo" width="40%" ><br/><br/>
-			        
-			        <h4>選擇新圖片：
-		            <input type="file" name="theFirstFile">
-		            
-		            <input type="button" onClick="javascript:pic();" name=uploadButton value="上傳"></h4>
-						<script language="javascript">  
-						//點選提交按鈕觸發下面的函式
-						function pic(){  
-							document.form.action="UnitInfoEdit_DBUpdate_pic.jsp";
-							document.form.enctype="multipart/form-data";
-							document.form.submit();
-						}  
-						</script>
 			        </div>
 			        
 			        <div class="col-sm-9"><h4>
