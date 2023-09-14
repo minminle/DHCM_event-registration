@@ -12,7 +12,10 @@ public class DBConfig {
 		 //String DBPath="/Users/sunhochia/Documents/GitHub/DHCM_event-registration/testv0.4/src/main/webapp/eventA.accdb";
 		 
 		 //宜蓁資料庫
-		 String DBPath="C:\\Users\\s0979\\OneDrive\\文件\\GitHub\\DHCM_take-a-leave\\testv0.4\\src\\main\\webapp\\eventA.accdb";
-	return DBPath;		
+		 //String DBPath="C:\\Users\\s0979\\OneDrive\\文件\\GitHub\\DHCM_take-a-leave\\testv0.4\\src\\main\\webapp\\eventA.accdb";
+	
+		String DBPath="C:\\apache-tomcat-9.0.54\\webapps\\ testv0.4\\eventA.accdb";
+		
+		return DBPath;		
 	}
 }
